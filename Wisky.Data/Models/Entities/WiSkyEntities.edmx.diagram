@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="0c8fa189ebee4512b8a8ee058883048a" Name="Diagram1" ZoomLevel="66">
+        <EntityTypeShape EntityType="WiSkyEntities.Account" PointX="6" PointY="6.625" Width="1.5" />
+        <EntityTypeShape EntityType="WiSkyEntities.Area" PointX="7.5" PointY="20" Width="1.5" />
+        <EntityTypeShape EntityType="WiSkyEntities.Box" PointX="5.25" PointY="18.125" Width="1.5" />
+        <EntityTypeShape EntityType="WiSkyEntities.Brand" PointX="0.75" PointY="6.875" Width="1.5" />
+        <EntityTypeShape EntityType="WiSkyEntities.Device" PointX="7.5" PointY="16.125" Width="1.5" />
+        <EntityTypeShape EntityType="WiSkyEntities.DeviceScenario" PointX="9.75" PointY="16.125" Width="1.5" />
+        <EntityTypeShape EntityType="WiSkyEntities.Layout" PointX="5.25" PointY="11.5" Width="1.5" />
+        <EntityTypeShape EntityType="WiSkyEntities.Location" PointX="3" PointY="14.375" Width="1.5" />
+        <EntityTypeShape EntityType="WiSkyEntities.MediaSrc" PointX="3" PointY="6.5" Width="1.5" />
+        <EntityTypeShape EntityType="WiSkyEntities.MediaType" PointX="0.75" PointY="4.25" Width="1.5" />
+        <EntityTypeShape EntityType="WiSkyEntities.Playlist" PointX="6" PointY="3.125" Width="1.5" />
+        <EntityTypeShape EntityType="WiSkyEntities.PlaylistItem" PointX="8.25" PointY="6.875" Width="1.5" />
+        <EntityTypeShape EntityType="WiSkyEntities.Resolution" PointX="3" PointY="10.875" Width="1.5" />
+        <EntityTypeShape EntityType="WiSkyEntities.Role" PointX="3.75" PointY="3.25" Width="1.5" />
+        <EntityTypeShape EntityType="WiSkyEntities.Scenario" PointX="7.5" PointY="11.25" Width="1.5" />
+        <EntityTypeShape EntityType="WiSkyEntities.ScenarioItem" PointX="9.75" PointY="11.625" Width="1.5" />
+        <EntityTypeShape EntityType="WiSkyEntities.Screen" PointX="5.25" PointY="14.625" Width="1.5" />
+        <AssociationConnector Association="WiSkyEntities.FK_Account_Brand" />
+        <AssociationConnector Association="WiSkyEntities.FK_Account_Role" />
+        <AssociationConnector Association="WiSkyEntities.FK_Area_Layout" />
+        <AssociationConnector Association="WiSkyEntities.FK_ScenarioItem_Area" />
+        <AssociationConnector Association="WiSkyEntities.FK_Box_Location" />
+        <AssociationConnector Association="WiSkyEntities.FK_DeviceMatching_Box" />
+        <AssociationConnector Association="WiSkyEntities.FK_Location_Brand" />
+        <AssociationConnector Association="WiSkyEntities.FK_MediaSrc_Brand" />
+        <AssociationConnector Association="WiSkyEntities.FK_DeviceMatching_Screen" />
+        <AssociationConnector Association="WiSkyEntities.FK_DeviceScenario_Device" />
+        <AssociationConnector Association="WiSkyEntities.FK_DeviceScenario_Scenario" />
+        <AssociationConnector Association="WiSkyEntities.FK_Scenario_Layout" />
+        <AssociationConnector Association="WiSkyEntities.FK_Screen_Location" />
+        <AssociationConnector Association="WiSkyEntities.FK_MediaSrc_MediaType" />
+        <AssociationConnector Association="WiSkyEntities.FK_PlaylistItem_MediaSrc" />
+        <AssociationConnector Association="WiSkyEntities.FK_PlaylistItem_Playlist" />
+        <AssociationConnector Association="WiSkyEntities.FK_PlaylistScenarioArea_Playlist" />
+        <AssociationConnector Association="WiSkyEntities.FK_Screen_Resolution" />
+        <AssociationConnector Association="WiSkyEntities.FK_PlaylistScenarioArea_Scenario" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
