@@ -7,12 +7,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Wisky.Data.Models.ViewModels
+namespace DSS.Data.Models.ViewModels
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class LocationViewModel : SkyWeb.DatVM.Mvc.BaseEntityViewModel<Wisky.Data.Models.Entities.Location>
+    public partial class LocationViewModel : SkyWeb.DatVM.Mvc.BaseEntityViewModel<DSS.Data.Models.Entities.Location>
     {
     	
     			public virtual int LocationID { get; set; }
@@ -24,7 +24,7 @@ namespace Wisky.Data.Models.ViewModels
     			public virtual string Description { get; set; }
     	
     	public LocationViewModel() : base() { }
-    	public LocationViewModel(Wisky.Data.Models.Entities.Location entity) : base(entity) { }
+    	public LocationViewModel(DSS.Data.Models.Entities.Location entity) : base(entity) { }
     
     }
 }

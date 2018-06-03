@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Web;
-using Wisky.Data.Models.Entities;
 
 namespace Wisky.Data.Utility
 {

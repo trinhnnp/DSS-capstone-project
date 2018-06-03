@@ -7,8 +7,8 @@
     <ProjectGuid>{B38FB39B-7D62-4C03-B92E-B5BB72320769}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Wisky.Data</RootNamespace>
-    <AssemblyName>Wisky.Data</AssemblyName>
+    <RootNamespace>DSS.Data</RootNamespace>
+    <AssemblyName>DSS.Data</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -111,40 +111,79 @@
     <Compile Include="ApiEndpoint.cs" />
     <Compile Include="Models\ConstantManager.cs" />
     <Compile Include="Models\Entities\Account.cs">
-      <DependentUpon>WiSkyEntities.tt</DependentUpon>
+      <DependentUpon>DSSEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Entities\AccountRefined.cs">
       <DependentUpon>EntityRefinery.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Entities\Area.cs">
-      <DependentUpon>WiSkyEntities.tt</DependentUpon>
+      <DependentUpon>DSSEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Entities\AreaRefined.cs">
       <DependentUpon>EntityRefinery.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\Entities\AspNetRole.cs">
+      <DependentUpon>DSSEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\AspNetRoleRefined.cs">
+      <DependentUpon>EntityRefinery.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\AspNetUser.cs">
+      <DependentUpon>DSSEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\AspNetUserClaim.cs">
+      <DependentUpon>DSSEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\AspNetUserClaimRefined.cs">
+      <DependentUpon>EntityRefinery.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\AspNetUserLogin.cs">
+      <DependentUpon>DSSEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\AspNetUserLoginRefined.cs">
+      <DependentUpon>EntityRefinery.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\AspNetUserRefined.cs">
+      <DependentUpon>EntityRefinery.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\Entities\Box.cs">
-      <DependentUpon>WiSkyEntities.tt</DependentUpon>
+      <DependentUpon>DSSEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Entities\BoxRefined.cs">
       <DependentUpon>EntityRefinery.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Entities\Brand.cs">
-      <DependentUpon>WiSkyEntities.tt</DependentUpon>
+      <DependentUpon>DSSEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Entities\BrandRefined.cs">
       <DependentUpon>EntityRefinery.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Entities\Device.cs">
-      <DependentUpon>WiSkyEntities.tt</DependentUpon>
+      <DependentUpon>DSSEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Entities\DeviceRefined.cs">
       <DependentUpon>EntityRefinery.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Entities\DeviceScenario.cs">
-      <DependentUpon>WiSkyEntities.tt</DependentUpon>
+      <DependentUpon>DSSEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Entities\DeviceScenarioRefined.cs">
       <DependentUpon>EntityRefinery.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\DSSEntities.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSSEntities.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\DSSEntities.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSSEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\DSSEntities.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSSEntities.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\Entities\EntityRefinery.cs">
       <DependentUpon>EntityRefinery.tt</DependentUpon>
@@ -157,34 +196,34 @@
       <DependentUpon>EntityRefinery.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Entities\Layout.cs">
-      <DependentUpon>WiSkyEntities.tt</DependentUpon>
+      <DependentUpon>DSSEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Entities\LayoutRefined.cs">
       <DependentUpon>EntityRefinery.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Entities\Location.cs">
-      <DependentUpon>WiSkyEntities.tt</DependentUpon>
+      <DependentUpon>DSSEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Entities\LocationRefined.cs">
       <DependentUpon>EntityRefinery.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Entities\MediaSrc.cs">
-      <DependentUpon>WiSkyEntities.tt</DependentUpon>
+      <DependentUpon>DSSEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Entities\MediaSrcRefined.cs">
       <DependentUpon>EntityRefinery.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Entities\MediaType.cs">
-      <DependentUpon>WiSkyEntities.tt</DependentUpon>
+      <DependentUpon>DSSEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Entities\MediaTypeRefined.cs">
       <DependentUpon>EntityRefinery.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Entities\Playlist.cs">
-      <DependentUpon>WiSkyEntities.tt</DependentUpon>
+      <DependentUpon>DSSEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Entities\PlaylistItem.cs">
-      <DependentUpon>WiSkyEntities.tt</DependentUpon>
+      <DependentUpon>DSSEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Entities\PlaylistItemRefined.cs">
       <DependentUpon>EntityRefinery.tt</DependentUpon>
@@ -196,6 +235,18 @@
       <DependentUpon>Repositories.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Entities\Repositories\AreaRepositoryGen.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\Repositories\AspNetRoleRepositoryGen.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\Repositories\AspNetUserClaimRepositoryGen.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\Repositories\AspNetUserLoginRepositoryGen.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\Repositories\AspNetUserRepositoryGen.cs">
       <DependentUpon>Repositories.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Entities\Repositories\BoxRepositoryGen.cs">
@@ -249,22 +300,22 @@
       <DependentUpon>Repositories.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Entities\Resolution.cs">
-      <DependentUpon>WiSkyEntities.tt</DependentUpon>
+      <DependentUpon>DSSEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Entities\ResolutionRefined.cs">
       <DependentUpon>EntityRefinery.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Entities\Role.cs">
-      <DependentUpon>WiSkyEntities.tt</DependentUpon>
+      <DependentUpon>DSSEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Entities\RoleRefined.cs">
       <DependentUpon>EntityRefinery.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Entities\Scenario.cs">
-      <DependentUpon>WiSkyEntities.tt</DependentUpon>
+      <DependentUpon>DSSEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Entities\ScenarioItem.cs">
-      <DependentUpon>WiSkyEntities.tt</DependentUpon>
+      <DependentUpon>DSSEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Entities\ScenarioItemRefined.cs">
       <DependentUpon>EntityRefinery.tt</DependentUpon>
@@ -273,7 +324,7 @@
       <DependentUpon>EntityRefinery.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Entities\Screen.cs">
-      <DependentUpon>WiSkyEntities.tt</DependentUpon>
+      <DependentUpon>DSSEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Entities\ScreenRefined.cs">
       <DependentUpon>EntityRefinery.tt</DependentUpon>
@@ -284,9 +335,22 @@
     <Compile Include="Models\Entities\Services\AreaServiceGen.cs">
       <DependentUpon>Services.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\Entities\Services\AspNetRoleServiceGen.cs">
+      <DependentUpon>Services.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\Services\AspNetUserClaimServiceGen.cs">
+      <DependentUpon>Services.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\Services\AspNetUserLoginServiceGen.cs">
+      <DependentUpon>Services.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\Services\AspNetUserServiceGen.cs">
+      <DependentUpon>Services.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\Entities\Services\BoxServiceGen.cs">
       <DependentUpon>Services.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\Entities\Services\BrandService.cs" />
     <Compile Include="Models\Entities\Services\BrandServiceGen.cs">
       <DependentUpon>Services.tt</DependentUpon>
     </Compile>
@@ -334,31 +398,22 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="Models\Entities\sp_helpdiagramdefinition_Result.cs">
-      <DependentUpon>WiSkyEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Entities\sp_helpdiagrams_Result.cs">
-      <DependentUpon>WiSkyEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Entities\WiSkyEntities.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>WiSkyEntities.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Entities\WiSkyEntities.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>WiSkyEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Entities\WiSkyEntities.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>WiSkyEntities.edmx</DependentUpon>
-    </Compile>
     <Compile Include="Models\ViewModels\AccountViewModelGen.cs">
       <DependentUpon>ViewModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\ViewModels\AreaViewModelGen.cs">
+      <DependentUpon>ViewModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ViewModels\AspNetRoleViewModelGen.cs">
+      <DependentUpon>ViewModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ViewModels\AspNetUserClaimViewModelGen.cs">
+      <DependentUpon>ViewModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ViewModels\AspNetUserLoginViewModelGen.cs">
+      <DependentUpon>ViewModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ViewModels\AspNetUserViewModelGen.cs">
       <DependentUpon>ViewModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\ViewModels\BoxViewModelGen.cs">
@@ -420,18 +475,28 @@
   <ItemGroup />
   <ItemGroup>
     <None Include="App.Config" />
-    <EntityDeploy Include="Models\Entities\WiSkyEntities.edmx">
+    <EntityDeploy Include="Models\Entities\DSSEntities.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>WiSkyEntities.Designer.cs</LastGenOutput>
+      <LastGenOutput>DSSEntities.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="Models\Entities\WiSkyEntities.edmx.diagram">
-      <DependentUpon>WiSkyEntities.edmx</DependentUpon>
+    <None Include="Models\Entities\DSSEntities.edmx.diagram">
+      <DependentUpon>DSSEntities.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Libs\SkyWeb.DatVM.Data.dll" />
     <Content Include="Libs\SkyWeb.DatVM.Mvc.dll" />
+    <Content Include="Models\Entities\DSSEntities.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DSSEntities.edmx</DependentUpon>
+      <LastGenOutput>DSSEntities.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\Entities\DSSEntities.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DSSEntities.edmx</DependentUpon>
+      <LastGenOutput>DSSEntities.cs</LastGenOutput>
+    </Content>
     <Content Include="Models\Entities\EntityRefinery.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>EntityRefinery3.cs</LastGenOutput>
@@ -443,16 +508,6 @@
     <Content Include="Models\Entities\Services\Services.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Services.cs</LastGenOutput>
-    </Content>
-    <Content Include="Models\Entities\WiSkyEntities.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>WiSkyEntities.edmx</DependentUpon>
-      <LastGenOutput>WiSkyEntities.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Models\Entities\WiSkyEntities.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>WiSkyEntities.edmx</DependentUpon>
-      <LastGenOutput>WiSkyEntities.cs</LastGenOutput>
     </Content>
     <Content Include="Models\ViewModels\ViewModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>

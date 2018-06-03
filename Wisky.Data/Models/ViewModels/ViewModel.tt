@@ -5,7 +5,7 @@
  <#
 
 string[] ExcludedProperties = new string[] { "Active", "CreatedTime", "UpdatedTime", };
-const string inputFile = @".\..\Entities\WiSkyEntities.edmx";
+const string inputFile = @".\..\Entities\DSSEntities.edmx";
 var textTransform = DynamicTextTransformation.Create(this);
 var code = new CodeGenerationTools(this);
 var ef = new MetadataTools(this);
@@ -31,7 +31,7 @@ foreach (var entity in typeMapper.GetItemsToGenerate<EntityType>(itemCollection)
 	var viewModelName = entityName + "ViewModel";
 #>
 <#=codeStringGenerator.UsingDirectives(inHeader: false)#>
-<#=codeStringGenerator.EntityClassOpening(entity)#> : SkyWeb.DatVM.Mvc.BaseEntityViewModel<Wisky.Data.Models.Entities.<#=entityName#>>
+<#=codeStringGenerator.EntityClassOpening(entity)#> : SkyWeb.DatVM.Mvc.BaseEntityViewModel<DSS.Data.Models.Entities.<#=entityName#>>
 {
 	
 	<# foreach (var property in simpleProperties)
@@ -45,7 +45,7 @@ foreach (var entity in typeMapper.GetItemsToGenerate<EntityType>(itemCollection)
 	#>
 
 	public <#= viewModelName #>() : base() { }
-	public <#= viewModelName #>(Wisky.Data.Models.Entities.<#= entityName #> entity) : base(entity) { }
+	public <#= viewModelName #>(DSS.Data.Models.Entities.<#= entityName #> entity) : base(entity) { }
 
 }
 <#

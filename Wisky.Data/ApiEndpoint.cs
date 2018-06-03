@@ -1,12 +1,11 @@
 ﻿using AutoMapper;
+using DSS.Data.Models.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
-using Wisky.Data.Models.Entities;
-using Wisky.Data.Models.ViewModels;
 
 namespace Wisky.Data
 {
@@ -26,7 +25,7 @@ namespace Wisky.Data
 
             SkyWeb.DatVM.Mvc.Autofac.AutofacInitializer.Initialize(
                 Assembly.GetExecutingAssembly(),
-                typeof(WiSkyEntities),
+                typeof(DSSEntities),
                 new MapperConfiguration(fullMapperConfig),
                 additionalModules);
         }

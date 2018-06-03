@@ -7,12 +7,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Wisky.Data.Models.ViewModels
+namespace DSS.Data.Models.ViewModels
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class PlaylistItemViewModel : SkyWeb.DatVM.Mvc.BaseEntityViewModel<Wisky.Data.Models.Entities.PlaylistItem>
+    public partial class PlaylistItemViewModel : SkyWeb.DatVM.Mvc.BaseEntityViewModel<DSS.Data.Models.Entities.PlaylistItem>
     {
     	
     			public virtual int PlaylistItemID { get; set; }
@@ -22,7 +22,7 @@ namespace Wisky.Data.Models.ViewModels
     			public virtual string Duration { get; set; }
     	
     	public PlaylistItemViewModel() : base() { }
-    	public PlaylistItemViewModel(Wisky.Data.Models.Entities.PlaylistItem entity) : base(entity) { }
+    	public PlaylistItemViewModel(DSS.Data.Models.Entities.PlaylistItem entity) : base(entity) { }
     
     }
 }

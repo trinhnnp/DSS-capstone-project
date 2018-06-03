@@ -1,194 +1,248 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="WiSkyEntitiesStoreContainer" CdmEntityContainer="Entities">
+  <EntityContainerMapping StorageEntityContainer="DSSModelStoreContainer" CdmEntityContainer="DSSEntities">
     <EntitySetMapping Name="Accounts">
-      <EntityTypeMapping TypeName="WiSkyEntities.Account">
+      <EntityTypeMapping TypeName="DSSModel.Account">
         <MappingFragment StoreEntitySet="Account">
-          <ScalarProperty Name="CreateDatetime" ColumnName="CreateDatetime" />
-          <ScalarProperty Name="Fullname" ColumnName="Fullname" />
-          <ScalarProperty Name="Password" ColumnName="Password" />
-          <ScalarProperty Name="Username" ColumnName="Username" />
-          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
-          <ScalarProperty Name="isActive" ColumnName="isActive" />
-          <ScalarProperty Name="BrandID" ColumnName="BrandID" />
           <ScalarProperty Name="AccountID" ColumnName="AccountID" />
+          <ScalarProperty Name="BrandID" ColumnName="BrandID" />
+          <ScalarProperty Name="isActive" ColumnName="isActive" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Fullname" ColumnName="Fullname" />
+          <ScalarProperty Name="CreateDatetime" ColumnName="CreateDatetime" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Areas">
-      <EntityTypeMapping TypeName="WiSkyEntities.Area">
+      <EntityTypeMapping TypeName="DSSModel.Area">
         <MappingFragment StoreEntitySet="Area">
-          <ScalarProperty Name="Note" ColumnName="Note" />
-          <ScalarProperty Name="Y2Postition" ColumnName="Y2Postition" />
-          <ScalarProperty Name="Y1Position" ColumnName="Y1Position" />
-          <ScalarProperty Name="X2Position" ColumnName="X2Position" />
-          <ScalarProperty Name="X1Position" ColumnName="X1Position" />
-          <ScalarProperty Name="AreaCode" ColumnName="AreaCode" />
-          <ScalarProperty Name="LayoutID" ColumnName="LayoutID" />
           <ScalarProperty Name="AreaID" ColumnName="AreaID" />
+          <ScalarProperty Name="LayoutID" ColumnName="LayoutID" />
+          <ScalarProperty Name="AreaCode" ColumnName="AreaCode" />
+          <ScalarProperty Name="X1Position" ColumnName="X1Position" />
+          <ScalarProperty Name="X2Position" ColumnName="X2Position" />
+          <ScalarProperty Name="Y1Position" ColumnName="Y1Position" />
+          <ScalarProperty Name="Y2Postition" ColumnName="Y2Postition" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetRoles">
+      <EntityTypeMapping TypeName="DSSModel.AspNetRole">
+        <MappingFragment StoreEntitySet="AspNetRoles">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUserClaims">
+      <EntityTypeMapping TypeName="DSSModel.AspNetUserClaim">
+        <MappingFragment StoreEntitySet="AspNetUserClaims">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="ClaimType" ColumnName="ClaimType" />
+          <ScalarProperty Name="ClaimValue" ColumnName="ClaimValue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUserLogins">
+      <EntityTypeMapping TypeName="DSSModel.AspNetUserLogin">
+        <MappingFragment StoreEntitySet="AspNetUserLogins">
+          <ScalarProperty Name="LoginProvider" ColumnName="LoginProvider" />
+          <ScalarProperty Name="ProviderKey" ColumnName="ProviderKey" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUsers">
+      <EntityTypeMapping TypeName="DSSModel.AspNetUser">
+        <MappingFragment StoreEntitySet="AspNetUsers">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="EmailConfirmed" ColumnName="EmailConfirmed" />
+          <ScalarProperty Name="PasswordHash" ColumnName="PasswordHash" />
+          <ScalarProperty Name="SecurityStamp" ColumnName="SecurityStamp" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="PhoneNumberConfirmed" ColumnName="PhoneNumberConfirmed" />
+          <ScalarProperty Name="TwoFactorEnabled" ColumnName="TwoFactorEnabled" />
+          <ScalarProperty Name="LockoutEndDateUtc" ColumnName="LockoutEndDateUtc" />
+          <ScalarProperty Name="LockoutEnabled" ColumnName="LockoutEnabled" />
+          <ScalarProperty Name="AccessFailedCount" ColumnName="AccessFailedCount" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Boxes">
-      <EntityTypeMapping TypeName="WiSkyEntities.Box">
+      <EntityTypeMapping TypeName="DSSModel.Box">
         <MappingFragment StoreEntitySet="Box">
-          <ScalarProperty Name="Description" ColumnName="Description" />
-          <ScalarProperty Name="BoxName" ColumnName="BoxName" />
-          <ScalarProperty Name="LocationID" ColumnName="LocationID" />
           <ScalarProperty Name="BoxID" ColumnName="BoxID" />
+          <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+          <ScalarProperty Name="BoxName" ColumnName="BoxName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Brands">
-      <EntityTypeMapping TypeName="WiSkyEntities.Brand">
+      <EntityTypeMapping TypeName="DSSModel.Brand">
         <MappingFragment StoreEntitySet="Brand">
-          <ScalarProperty Name="Description" ColumnName="Description" />
-          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
-          <ScalarProperty Name="BrandName" ColumnName="BrandName" />
           <ScalarProperty Name="BrandID" ColumnName="BrandID" />
+          <ScalarProperty Name="BrandName" ColumnName="BrandName" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Devices">
-      <EntityTypeMapping TypeName="WiSkyEntities.Device">
+      <EntityTypeMapping TypeName="DSSModel.Device">
         <MappingFragment StoreEntitySet="Device">
-          <ScalarProperty Name="Description" ColumnName="Description" />
-          <ScalarProperty Name="CreateDatetime" ColumnName="CreateDatetime" />
-          <ScalarProperty Name="BoxID" ColumnName="BoxID" />
-          <ScalarProperty Name="ScreenID" ColumnName="ScreenID" />
           <ScalarProperty Name="DeviceID" ColumnName="DeviceID" />
+          <ScalarProperty Name="ScreenID" ColumnName="ScreenID" />
+          <ScalarProperty Name="BoxID" ColumnName="BoxID" />
+          <ScalarProperty Name="CreateDatetime" ColumnName="CreateDatetime" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="DeviceScenarios">
-      <EntityTypeMapping TypeName="WiSkyEntities.DeviceScenario">
+      <EntityTypeMapping TypeName="DSSModel.DeviceScenario">
         <MappingFragment StoreEntitySet="DeviceScenario">
-          <ScalarProperty Name="EndTime" ColumnName="EndTime" />
-          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
-          <ScalarProperty Name="TimesToPlay" ColumnName="TimesToPlay" />
-          <ScalarProperty Name="ScenarioID" ColumnName="ScenarioID" />
-          <ScalarProperty Name="DeviceID" ColumnName="DeviceID" />
           <ScalarProperty Name="DeviceScenationID" ColumnName="DeviceScenationID" />
+          <ScalarProperty Name="DeviceID" ColumnName="DeviceID" />
+          <ScalarProperty Name="ScenarioID" ColumnName="ScenarioID" />
+          <ScalarProperty Name="TimesToPlay" ColumnName="TimesToPlay" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="EndTime" ColumnName="EndTime" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Layouts">
-      <EntityTypeMapping TypeName="WiSkyEntities.Layout">
+      <EntityTypeMapping TypeName="DSSModel.Layout">
         <MappingFragment StoreEntitySet="Layout">
-          <ScalarProperty Name="AreasNum" ColumnName="AreasNum" />
-          <ScalarProperty Name="Title" ColumnName="Title" />
           <ScalarProperty Name="LayoutID" ColumnName="LayoutID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="AreasNum" ColumnName="AreasNum" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Locations">
-      <EntityTypeMapping TypeName="WiSkyEntities.Location">
+      <EntityTypeMapping TypeName="DSSModel.Location">
         <MappingFragment StoreEntitySet="Location">
-          <ScalarProperty Name="Description" ColumnName="Description" />
-          <ScalarProperty Name="CreateDatetime" ColumnName="CreateDatetime" />
-          <ScalarProperty Name="Address" ColumnName="Address" />
-          <ScalarProperty Name="District" ColumnName="District" />
-          <ScalarProperty Name="Province" ColumnName="Province" />
-          <ScalarProperty Name="BrandID" ColumnName="BrandID" />
           <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+          <ScalarProperty Name="BrandID" ColumnName="BrandID" />
+          <ScalarProperty Name="Province" ColumnName="Province" />
+          <ScalarProperty Name="District" ColumnName="District" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="CreateDatetime" ColumnName="CreateDatetime" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="MediaSrcs">
-      <EntityTypeMapping TypeName="WiSkyEntities.MediaSrc">
+      <EntityTypeMapping TypeName="DSSModel.MediaSrc">
         <MappingFragment StoreEntitySet="MediaSrc">
-          <ScalarProperty Name="Description" ColumnName="Description" />
-          <ScalarProperty Name="CreateDatetime" ColumnName="CreateDatetime" />
-          <ScalarProperty Name="UpdateDatetime" ColumnName="UpdateDatetime" />
-          <ScalarProperty Name="URL" ColumnName="URL" />
-          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
-          <ScalarProperty Name="Status" ColumnName="Status" />
-          <ScalarProperty Name="Title" ColumnName="Title" />
-          <ScalarProperty Name="BrandID" ColumnName="BrandID" />
           <ScalarProperty Name="MediaSrcID" ColumnName="MediaSrcID" />
+          <ScalarProperty Name="BrandID" ColumnName="BrandID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="URL" ColumnName="URL" />
+          <ScalarProperty Name="UpdateDatetime" ColumnName="UpdateDatetime" />
+          <ScalarProperty Name="CreateDatetime" ColumnName="CreateDatetime" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="MediaTypes">
-      <EntityTypeMapping TypeName="WiSkyEntities.MediaType">
+      <EntityTypeMapping TypeName="DSSModel.MediaType">
         <MappingFragment StoreEntitySet="MediaType">
-          <ScalarProperty Name="Description" ColumnName="Description" />
-          <ScalarProperty Name="Name" ColumnName="Name" />
           <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Playlists">
-      <EntityTypeMapping TypeName="WiSkyEntities.Playlist">
+      <EntityTypeMapping TypeName="DSSModel.Playlist">
         <MappingFragment StoreEntitySet="Playlist">
-          <ScalarProperty Name="Description" ColumnName="Description" />
-          <ScalarProperty Name="Title" ColumnName="Title" />
           <ScalarProperty Name="PlaylistID" ColumnName="PlaylistID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="PlaylistItems">
-      <EntityTypeMapping TypeName="WiSkyEntities.PlaylistItem">
+      <EntityTypeMapping TypeName="DSSModel.PlaylistItem">
         <MappingFragment StoreEntitySet="PlaylistItem">
-          <ScalarProperty Name="Duration" ColumnName="Duration" />
-          <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
-          <ScalarProperty Name="PlaylistID" ColumnName="PlaylistID" />
-          <ScalarProperty Name="MediaSrcID" ColumnName="MediaSrcID" />
           <ScalarProperty Name="PlaylistItemID" ColumnName="PlaylistItemID" />
+          <ScalarProperty Name="MediaSrcID" ColumnName="MediaSrcID" />
+          <ScalarProperty Name="PlaylistID" ColumnName="PlaylistID" />
+          <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Resolutions">
-      <EntityTypeMapping TypeName="WiSkyEntities.Resolution">
+      <EntityTypeMapping TypeName="DSSModel.Resolution">
         <MappingFragment StoreEntitySet="Resolution">
-          <ScalarProperty Name="Note" ColumnName="Note" />
-          <ScalarProperty Name="Height" ColumnName="Height" />
-          <ScalarProperty Name="Width" ColumnName="Width" />
           <ScalarProperty Name="ResolutionID" ColumnName="ResolutionID" />
+          <ScalarProperty Name="Width" ColumnName="Width" />
+          <ScalarProperty Name="Height" ColumnName="Height" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Roles">
-      <EntityTypeMapping TypeName="WiSkyEntities.Role">
+      <EntityTypeMapping TypeName="DSSModel.Role">
         <MappingFragment StoreEntitySet="Role">
-          <ScalarProperty Name="Description" ColumnName="Description" />
-          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
           <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Scenarios">
-      <EntityTypeMapping TypeName="WiSkyEntities.Scenario">
+      <EntityTypeMapping TypeName="DSSModel.Scenario">
         <MappingFragment StoreEntitySet="Scenario">
-          <ScalarProperty Name="Description" ColumnName="Description" />
-          <ScalarProperty Name="Title" ColumnName="Title" />
-          <ScalarProperty Name="LayoutID" ColumnName="LayoutID" />
           <ScalarProperty Name="ScenarioID" ColumnName="ScenarioID" />
+          <ScalarProperty Name="LayoutID" ColumnName="LayoutID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="ScenarioItems">
-      <EntityTypeMapping TypeName="WiSkyEntities.ScenarioItem">
+      <EntityTypeMapping TypeName="DSSModel.ScenarioItem">
         <MappingFragment StoreEntitySet="ScenarioItem">
-          <ScalarProperty Name="Note" ColumnName="Note" />
-          <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
-          <ScalarProperty Name="AreaID" ColumnName="AreaID" />
-          <ScalarProperty Name="ScenarioID" ColumnName="ScenarioID" />
-          <ScalarProperty Name="PlaylistID" ColumnName="PlaylistID" />
           <ScalarProperty Name="ScenarioItemID" ColumnName="ScenarioItemID" />
+          <ScalarProperty Name="PlaylistID" ColumnName="PlaylistID" />
+          <ScalarProperty Name="ScenarioID" ColumnName="ScenarioID" />
+          <ScalarProperty Name="AreaID" ColumnName="AreaID" />
+          <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Screens">
-      <EntityTypeMapping TypeName="WiSkyEntities.Screen">
+      <EntityTypeMapping TypeName="DSSModel.Screen">
         <MappingFragment StoreEntitySet="Screen">
-          <ScalarProperty Name="Description" ColumnName="Description" />
-          <ScalarProperty Name="ScreenName" ColumnName="ScreenName" />
-          <ScalarProperty Name="ResolutionID" ColumnName="ResolutionID" />
-          <ScalarProperty Name="LocationID" ColumnName="LocationID" />
           <ScalarProperty Name="ScreenID" ColumnName="ScreenID" />
+          <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+          <ScalarProperty Name="ResolutionID" ColumnName="ResolutionID" />
+          <ScalarProperty Name="ScreenName" ColumnName="ScreenName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <AssociationSetMapping Name="AspNetUserRoles" TypeName="DSSModel.AspNetUserRoles" StoreEntitySet="AspNetUserRoles">
+      <EndProperty Name="AspNetRoles">
+        <ScalarProperty Name="Id" ColumnName="RoleId" />
+      </EndProperty>
+      <EndProperty Name="AspNetUsers">
+        <ScalarProperty Name="Id" ColumnName="UserId" />
+      </EndProperty>
+    </AssociationSetMapping>
   </EntityContainerMapping>
 </Mapping>

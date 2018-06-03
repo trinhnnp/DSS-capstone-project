@@ -7,12 +7,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Wisky.Data.Models.ViewModels
+namespace DSS.Data.Models.ViewModels
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class BoxViewModel : SkyWeb.DatVM.Mvc.BaseEntityViewModel<Wisky.Data.Models.Entities.Box>
+    public partial class BoxViewModel : SkyWeb.DatVM.Mvc.BaseEntityViewModel<DSS.Data.Models.Entities.Box>
     {
     	
     			public virtual int BoxID { get; set; }
@@ -21,7 +21,7 @@ namespace Wisky.Data.Models.ViewModels
     			public virtual string Description { get; set; }
     	
     	public BoxViewModel() : base() { }
-    	public BoxViewModel(Wisky.Data.Models.Entities.Box entity) : base(entity) { }
+    	public BoxViewModel(DSS.Data.Models.Entities.Box entity) : base(entity) { }
     
     }
 }

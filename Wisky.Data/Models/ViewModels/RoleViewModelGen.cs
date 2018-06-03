@@ -7,12 +7,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Wisky.Data.Models.ViewModels
+namespace DSS.Data.Models.ViewModels
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class RoleViewModel : SkyWeb.DatVM.Mvc.BaseEntityViewModel<Wisky.Data.Models.Entities.Role>
+    public partial class RoleViewModel : SkyWeb.DatVM.Mvc.BaseEntityViewModel<DSS.Data.Models.Entities.Role>
     {
     	
     			public virtual int RoleID { get; set; }
@@ -20,7 +20,7 @@ namespace Wisky.Data.Models.ViewModels
     			public virtual string Description { get; set; }
     	
     	public RoleViewModel() : base() { }
-    	public RoleViewModel(Wisky.Data.Models.Entities.Role entity) : base(entity) { }
+    	public RoleViewModel(DSS.Data.Models.Entities.Role entity) : base(entity) { }
     
     }
 }

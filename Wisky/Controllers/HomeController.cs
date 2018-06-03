@@ -10,9 +10,6 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
-using Wisky.Data.Models.Entities.Services;
-using Wisky.Data.Models.ViewModels;
-
 namespace Wisky.Controllers
 {
     [Authorize]

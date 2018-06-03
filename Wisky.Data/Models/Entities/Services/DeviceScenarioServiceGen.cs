@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Wisky.Data.Models.Entities.Services
+namespace DSS.Data.Models.Entities.Services
 {
     using System;
     using System.Collections.Generic;

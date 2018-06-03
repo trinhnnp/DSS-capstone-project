@@ -7,12 +7,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Wisky.Data.Models.ViewModels
+namespace DSS.Data.Models.ViewModels
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class DeviceViewModel : SkyWeb.DatVM.Mvc.BaseEntityViewModel<Wisky.Data.Models.Entities.Device>
+    public partial class DeviceViewModel : SkyWeb.DatVM.Mvc.BaseEntityViewModel<DSS.Data.Models.Entities.Device>
     {
     	
     			public virtual int DeviceID { get; set; }
@@ -22,7 +22,7 @@ namespace Wisky.Data.Models.ViewModels
     			public virtual string Description { get; set; }
     	
     	public DeviceViewModel() : base() { }
-    	public DeviceViewModel(Wisky.Data.Models.Entities.Device entity) : base(entity) { }
+    	public DeviceViewModel(DSS.Data.Models.Entities.Device entity) : base(entity) { }
     
     }
 }

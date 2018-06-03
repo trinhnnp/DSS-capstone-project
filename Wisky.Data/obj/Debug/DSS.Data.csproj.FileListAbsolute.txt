@@ -33,3 +33,37 @@ E:\CAPSTONE PROJECT\DSS-capstone-project\Wisky\Wisky.Data\obj\Debug\DSS.Data.csp
 E:\CAPSTONE PROJECT\DSS-capstone-project\Wisky\Wisky.Data\obj\Debug\DSS.Data.csproj.CopyComplete
 E:\CAPSTONE PROJECT\DSS-capstone-project\Wisky\Wisky.Data\obj\Debug\Wisky.Data.dll
 E:\CAPSTONE PROJECT\DSS-capstone-project\Wisky\Wisky.Data\obj\Debug\Wisky.Data.pdb
+C:\Users\TrinhNNP\Desktop\DSS-capstone-project\Wisky.Data\obj\Debug\DSS.Data.csproj.CoreCompileInputs.cache
+C:\Users\TrinhNNP\Desktop\DSS-capstone-project\Wisky.Data\bin\Debug\DSS.Data.dll.config
+C:\Users\TrinhNNP\Desktop\DSS-capstone-project\Wisky.Data\bin\Debug\DSS.Data.dll
+C:\Users\TrinhNNP\Desktop\DSS-capstone-project\Wisky.Data\bin\Debug\DSS.Data.pdb
+C:\Users\TrinhNNP\Desktop\DSS-capstone-project\Wisky.Data\bin\Debug\Autofac.dll
+C:\Users\TrinhNNP\Desktop\DSS-capstone-project\Wisky.Data\bin\Debug\Autofac.Integration.Mvc.dll
+C:\Users\TrinhNNP\Desktop\DSS-capstone-project\Wisky.Data\bin\Debug\AutoMapper.dll
+C:\Users\TrinhNNP\Desktop\DSS-capstone-project\Wisky.Data\bin\Debug\EntityFramework.dll
+C:\Users\TrinhNNP\Desktop\DSS-capstone-project\Wisky.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\TrinhNNP\Desktop\DSS-capstone-project\Wisky.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\TrinhNNP\Desktop\DSS-capstone-project\Wisky.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\TrinhNNP\Desktop\DSS-capstone-project\Wisky.Data\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\TrinhNNP\Desktop\DSS-capstone-project\Wisky.Data\bin\Debug\System.Web.Helpers.dll
+C:\Users\TrinhNNP\Desktop\DSS-capstone-project\Wisky.Data\bin\Debug\System.Web.Mvc.dll
+C:\Users\TrinhNNP\Desktop\DSS-capstone-project\Wisky.Data\bin\Debug\System.Web.Razor.dll
+C:\Users\TrinhNNP\Desktop\DSS-capstone-project\Wisky.Data\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\TrinhNNP\Desktop\DSS-capstone-project\Wisky.Data\bin\Debug\System.Web.WebPages.dll
+C:\Users\TrinhNNP\Desktop\DSS-capstone-project\Wisky.Data\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\TrinhNNP\Desktop\DSS-capstone-project\Wisky.Data\bin\Debug\Autofac.xml
+C:\Users\TrinhNNP\Desktop\DSS-capstone-project\Wisky.Data\bin\Debug\Autofac.Integration.Mvc.xml
+C:\Users\TrinhNNP\Desktop\DSS-capstone-project\Wisky.Data\bin\Debug\AutoMapper.xml
+C:\Users\TrinhNNP\Desktop\DSS-capstone-project\Wisky.Data\bin\Debug\EntityFramework.xml
+C:\Users\TrinhNNP\Desktop\DSS-capstone-project\Wisky.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\TrinhNNP\Desktop\DSS-capstone-project\Wisky.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\TrinhNNP\Desktop\DSS-capstone-project\Wisky.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\TrinhNNP\Desktop\DSS-capstone-project\Wisky.Data\bin\Debug\System.Web.Helpers.xml
+C:\Users\TrinhNNP\Desktop\DSS-capstone-project\Wisky.Data\bin\Debug\System.Web.Mvc.xml
+C:\Users\TrinhNNP\Desktop\DSS-capstone-project\Wisky.Data\bin\Debug\System.Web.Razor.xml
+C:\Users\TrinhNNP\Desktop\DSS-capstone-project\Wisky.Data\bin\Debug\System.Web.WebPages.xml
+C:\Users\TrinhNNP\Desktop\DSS-capstone-project\Wisky.Data\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\TrinhNNP\Desktop\DSS-capstone-project\Wisky.Data\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\TrinhNNP\Desktop\DSS-capstone-project\Wisky.Data\obj\Debug\DSS.Data.csproj.CopyComplete
+C:\Users\TrinhNNP\Desktop\DSS-capstone-project\Wisky.Data\obj\Debug\DSS.Data.dll
+C:\Users\TrinhNNP\Desktop\DSS-capstone-project\Wisky.Data\obj\Debug\DSS.Data.pdb

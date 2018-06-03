@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="WiSkyEntities" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+<Schema Namespace="DSSEntities" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
   <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
     <FunctionImport Name="sp_alterdiagram">
       <Parameter Name="diagramname" Mode="In" Type="String" />
@@ -17,11 +17,11 @@
       <Parameter Name="diagramname" Mode="In" Type="String" />
       <Parameter Name="owner_id" Mode="In" Type="Int32" />
     </FunctionImport>
-    <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(WiSkyEntities.sp_helpdiagramdefinition_Result)">
+    <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(DSSEntities.sp_helpdiagramdefinition_Result)">
       <Parameter Name="diagramname" Mode="In" Type="String" />
       <Parameter Name="owner_id" Mode="In" Type="Int32" />
     </FunctionImport>
-    <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(WiSkyEntities.sp_helpdiagrams_Result)">
+    <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(DSSEntities.sp_helpdiagrams_Result)">
       <Parameter Name="diagramname" Mode="In" Type="String" />
       <Parameter Name="owner_id" Mode="In" Type="Int32" />
     </FunctionImport>
@@ -31,96 +31,96 @@
       <Parameter Name="new_diagramname" Mode="In" Type="String" />
     </FunctionImport>
     <FunctionImport Name="sp_upgraddiagrams" />
-    <EntitySet Name="Accounts" EntityType="WiSkyEntities.Account" />
-    <EntitySet Name="Areas" EntityType="WiSkyEntities.Area" />
-    <EntitySet Name="Boxes" EntityType="WiSkyEntities.Box" />
-    <EntitySet Name="Brands" EntityType="WiSkyEntities.Brand" />
-    <EntitySet Name="Devices" EntityType="WiSkyEntities.Device" />
-    <EntitySet Name="DeviceScenarios" EntityType="WiSkyEntities.DeviceScenario" />
-    <EntitySet Name="Layouts" EntityType="WiSkyEntities.Layout" />
-    <EntitySet Name="Locations" EntityType="WiSkyEntities.Location" />
-    <EntitySet Name="MediaSrcs" EntityType="WiSkyEntities.MediaSrc" />
-    <EntitySet Name="MediaTypes" EntityType="WiSkyEntities.MediaType" />
-    <EntitySet Name="Playlists" EntityType="WiSkyEntities.Playlist" />
-    <EntitySet Name="PlaylistItems" EntityType="WiSkyEntities.PlaylistItem" />
-    <EntitySet Name="Resolutions" EntityType="WiSkyEntities.Resolution" />
-    <EntitySet Name="Roles" EntityType="WiSkyEntities.Role" />
-    <EntitySet Name="Scenarios" EntityType="WiSkyEntities.Scenario" />
-    <EntitySet Name="ScenarioItems" EntityType="WiSkyEntities.ScenarioItem" />
-    <EntitySet Name="Screens" EntityType="WiSkyEntities.Screen" />
-    <AssociationSet Name="FK_Account_Brand" Association="WiSkyEntities.FK_Account_Brand">
+    <EntitySet Name="Accounts" EntityType="DSSEntities.Account" />
+    <EntitySet Name="Areas" EntityType="DSSEntities.Area" />
+    <EntitySet Name="Boxes" EntityType="DSSEntities.Box" />
+    <EntitySet Name="Brands" EntityType="DSSEntities.Brand" />
+    <EntitySet Name="Devices" EntityType="DSSEntities.Device" />
+    <EntitySet Name="DeviceScenarios" EntityType="DSSEntities.DeviceScenario" />
+    <EntitySet Name="Layouts" EntityType="DSSEntities.Layout" />
+    <EntitySet Name="Locations" EntityType="DSSEntities.Location" />
+    <EntitySet Name="MediaSrcs" EntityType="DSSEntities.MediaSrc" />
+    <EntitySet Name="MediaTypes" EntityType="DSSEntities.MediaType" />
+    <EntitySet Name="Playlists" EntityType="DSSEntities.Playlist" />
+    <EntitySet Name="PlaylistItems" EntityType="DSSEntities.PlaylistItem" />
+    <EntitySet Name="Resolutions" EntityType="DSSEntities.Resolution" />
+    <EntitySet Name="Roles" EntityType="DSSEntities.Role" />
+    <EntitySet Name="Scenarios" EntityType="DSSEntities.Scenario" />
+    <EntitySet Name="ScenarioItems" EntityType="DSSEntities.ScenarioItem" />
+    <EntitySet Name="Screens" EntityType="DSSEntities.Screen" />
+    <AssociationSet Name="FK_Account_Brand" Association="DSSEntities.FK_Account_Brand">
       <End Role="Brand" EntitySet="Brands" />
       <End Role="Account" EntitySet="Accounts" />
     </AssociationSet>
-    <AssociationSet Name="FK_Account_Role" Association="WiSkyEntities.FK_Account_Role">
+    <AssociationSet Name="FK_Account_Role" Association="DSSEntities.FK_Account_Role">
       <End Role="Role" EntitySet="Roles" />
       <End Role="Account" EntitySet="Accounts" />
     </AssociationSet>
-    <AssociationSet Name="FK_Area_Layout" Association="WiSkyEntities.FK_Area_Layout">
+    <AssociationSet Name="FK_Area_Layout" Association="DSSEntities.FK_Area_Layout">
       <End Role="Layout" EntitySet="Layouts" />
       <End Role="Area" EntitySet="Areas" />
     </AssociationSet>
-    <AssociationSet Name="FK_ScenarioItem_Area" Association="WiSkyEntities.FK_ScenarioItem_Area">
+    <AssociationSet Name="FK_ScenarioItem_Area" Association="DSSEntities.FK_ScenarioItem_Area">
       <End Role="Area" EntitySet="Areas" />
       <End Role="ScenarioItem" EntitySet="ScenarioItems" />
     </AssociationSet>
-    <AssociationSet Name="FK_Box_Location" Association="WiSkyEntities.FK_Box_Location">
+    <AssociationSet Name="FK_Box_Location" Association="DSSEntities.FK_Box_Location">
       <End Role="Location" EntitySet="Locations" />
       <End Role="Box" EntitySet="Boxes" />
     </AssociationSet>
-    <AssociationSet Name="FK_DeviceMatching_Box" Association="WiSkyEntities.FK_DeviceMatching_Box">
+    <AssociationSet Name="FK_DeviceMatching_Box" Association="DSSEntities.FK_DeviceMatching_Box">
       <End Role="Box" EntitySet="Boxes" />
       <End Role="Device" EntitySet="Devices" />
     </AssociationSet>
-    <AssociationSet Name="FK_Location_Brand" Association="WiSkyEntities.FK_Location_Brand">
+    <AssociationSet Name="FK_Location_Brand" Association="DSSEntities.FK_Location_Brand">
       <End Role="Brand" EntitySet="Brands" />
       <End Role="Location" EntitySet="Locations" />
     </AssociationSet>
-    <AssociationSet Name="FK_MediaSrc_Brand" Association="WiSkyEntities.FK_MediaSrc_Brand">
+    <AssociationSet Name="FK_MediaSrc_Brand" Association="DSSEntities.FK_MediaSrc_Brand">
       <End Role="Brand" EntitySet="Brands" />
       <End Role="MediaSrc" EntitySet="MediaSrcs" />
     </AssociationSet>
-    <AssociationSet Name="FK_DeviceMatching_Screen" Association="WiSkyEntities.FK_DeviceMatching_Screen">
+    <AssociationSet Name="FK_DeviceMatching_Screen" Association="DSSEntities.FK_DeviceMatching_Screen">
       <End Role="Screen" EntitySet="Screens" />
       <End Role="Device" EntitySet="Devices" />
     </AssociationSet>
-    <AssociationSet Name="FK_DeviceScenario_Device" Association="WiSkyEntities.FK_DeviceScenario_Device">
+    <AssociationSet Name="FK_DeviceScenario_Device" Association="DSSEntities.FK_DeviceScenario_Device">
       <End Role="Device" EntitySet="Devices" />
       <End Role="DeviceScenario" EntitySet="DeviceScenarios" />
     </AssociationSet>
-    <AssociationSet Name="FK_DeviceScenario_Scenario" Association="WiSkyEntities.FK_DeviceScenario_Scenario">
+    <AssociationSet Name="FK_DeviceScenario_Scenario" Association="DSSEntities.FK_DeviceScenario_Scenario">
       <End Role="Scenario" EntitySet="Scenarios" />
       <End Role="DeviceScenario" EntitySet="DeviceScenarios" />
     </AssociationSet>
-    <AssociationSet Name="FK_Scenario_Layout" Association="WiSkyEntities.FK_Scenario_Layout">
+    <AssociationSet Name="FK_Scenario_Layout" Association="DSSEntities.FK_Scenario_Layout">
       <End Role="Layout" EntitySet="Layouts" />
       <End Role="Scenario" EntitySet="Scenarios" />
     </AssociationSet>
-    <AssociationSet Name="FK_Screen_Location" Association="WiSkyEntities.FK_Screen_Location">
+    <AssociationSet Name="FK_Screen_Location" Association="DSSEntities.FK_Screen_Location">
       <End Role="Location" EntitySet="Locations" />
       <End Role="Screen" EntitySet="Screens" />
     </AssociationSet>
-    <AssociationSet Name="FK_MediaSrc_MediaType" Association="WiSkyEntities.FK_MediaSrc_MediaType">
+    <AssociationSet Name="FK_MediaSrc_MediaType" Association="DSSEntities.FK_MediaSrc_MediaType">
       <End Role="MediaType" EntitySet="MediaTypes" />
       <End Role="MediaSrc" EntitySet="MediaSrcs" />
     </AssociationSet>
-    <AssociationSet Name="FK_PlaylistItem_MediaSrc" Association="WiSkyEntities.FK_PlaylistItem_MediaSrc">
+    <AssociationSet Name="FK_PlaylistItem_MediaSrc" Association="DSSEntities.FK_PlaylistItem_MediaSrc">
       <End Role="MediaSrc" EntitySet="MediaSrcs" />
       <End Role="PlaylistItem" EntitySet="PlaylistItems" />
     </AssociationSet>
-    <AssociationSet Name="FK_PlaylistItem_Playlist" Association="WiSkyEntities.FK_PlaylistItem_Playlist">
+    <AssociationSet Name="FK_PlaylistItem_Playlist" Association="DSSEntities.FK_PlaylistItem_Playlist">
       <End Role="Playlist" EntitySet="Playlists" />
       <End Role="PlaylistItem" EntitySet="PlaylistItems" />
     </AssociationSet>
-    <AssociationSet Name="FK_PlaylistScenarioArea_Playlist" Association="WiSkyEntities.FK_PlaylistScenarioArea_Playlist">
+    <AssociationSet Name="FK_PlaylistScenarioArea_Playlist" Association="DSSEntities.FK_PlaylistScenarioArea_Playlist">
       <End Role="Playlist" EntitySet="Playlists" />
       <End Role="ScenarioItem" EntitySet="ScenarioItems" />
     </AssociationSet>
-    <AssociationSet Name="FK_Screen_Resolution" Association="WiSkyEntities.FK_Screen_Resolution">
+    <AssociationSet Name="FK_Screen_Resolution" Association="DSSEntities.FK_Screen_Resolution">
       <End Role="Resolution" EntitySet="Resolutions" />
       <End Role="Screen" EntitySet="Screens" />
     </AssociationSet>
-    <AssociationSet Name="FK_PlaylistScenarioArea_Scenario" Association="WiSkyEntities.FK_PlaylistScenarioArea_Scenario">
+    <AssociationSet Name="FK_PlaylistScenarioArea_Scenario" Association="DSSEntities.FK_PlaylistScenarioArea_Scenario">
       <End Role="Scenario" EntitySet="Scenarios" />
       <End Role="ScenarioItem" EntitySet="ScenarioItems" />
     </AssociationSet>
@@ -148,8 +148,8 @@
     <Property Name="Password" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
     <Property Name="Fullname" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
     <Property Name="CreateDatetime" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
-    <NavigationProperty Name="Brand" Relationship="WiSkyEntities.FK_Account_Brand" FromRole="Account" ToRole="Brand" />
-    <NavigationProperty Name="Role" Relationship="WiSkyEntities.FK_Account_Role" FromRole="Account" ToRole="Role" />
+    <NavigationProperty Name="Brand" Relationship="DSSEntities.FK_Account_Brand" FromRole="Account" ToRole="Brand" />
+    <NavigationProperty Name="Role" Relationship="DSSEntities.FK_Account_Role" FromRole="Account" ToRole="Role" />
   </EntityType>
   <EntityType Name="Area">
     <Key>
@@ -163,8 +163,8 @@
     <Property Name="Y1Position" Type="Double" Nullable="false" />
     <Property Name="Y2Postition" Type="Double" Nullable="false" />
     <Property Name="Note" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-    <NavigationProperty Name="Layout" Relationship="WiSkyEntities.FK_Area_Layout" FromRole="Area" ToRole="Layout" />
-    <NavigationProperty Name="ScenarioItems" Relationship="WiSkyEntities.FK_ScenarioItem_Area" FromRole="Area" ToRole="ScenarioItem" />
+    <NavigationProperty Name="Layout" Relationship="DSSEntities.FK_Area_Layout" FromRole="Area" ToRole="Layout" />
+    <NavigationProperty Name="ScenarioItems" Relationship="DSSEntities.FK_ScenarioItem_Area" FromRole="Area" ToRole="ScenarioItem" />
   </EntityType>
   <EntityType Name="Box">
     <Key>
@@ -174,8 +174,8 @@
     <Property Name="LocationID" Type="Int32" Nullable="false" />
     <Property Name="BoxName" Type="Binary" Nullable="false" MaxLength="50" FixedLength="false" />
     <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-    <NavigationProperty Name="Location" Relationship="WiSkyEntities.FK_Box_Location" FromRole="Box" ToRole="Location" />
-    <NavigationProperty Name="Devices" Relationship="WiSkyEntities.FK_DeviceMatching_Box" FromRole="Box" ToRole="Device" />
+    <NavigationProperty Name="Location" Relationship="DSSEntities.FK_Box_Location" FromRole="Box" ToRole="Location" />
+    <NavigationProperty Name="Devices" Relationship="DSSEntities.FK_DeviceMatching_Box" FromRole="Box" ToRole="Device" />
   </EntityType>
   <EntityType Name="Brand">
     <Key>
@@ -185,9 +185,9 @@
     <Property Name="BrandName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="CreateDateTime" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
     <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-    <NavigationProperty Name="Accounts" Relationship="WiSkyEntities.FK_Account_Brand" FromRole="Brand" ToRole="Account" />
-    <NavigationProperty Name="Locations" Relationship="WiSkyEntities.FK_Location_Brand" FromRole="Brand" ToRole="Location" />
-    <NavigationProperty Name="MediaSrcs" Relationship="WiSkyEntities.FK_MediaSrc_Brand" FromRole="Brand" ToRole="MediaSrc" />
+    <NavigationProperty Name="Accounts" Relationship="DSSEntities.FK_Account_Brand" FromRole="Brand" ToRole="Account" />
+    <NavigationProperty Name="Locations" Relationship="DSSEntities.FK_Location_Brand" FromRole="Brand" ToRole="Location" />
+    <NavigationProperty Name="MediaSrcs" Relationship="DSSEntities.FK_MediaSrc_Brand" FromRole="Brand" ToRole="MediaSrc" />
   </EntityType>
   <EntityType Name="Device">
     <Key>
@@ -198,9 +198,9 @@
     <Property Name="BoxID" Type="Int32" Nullable="false" />
     <Property Name="CreateDatetime" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
     <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-    <NavigationProperty Name="Box" Relationship="WiSkyEntities.FK_DeviceMatching_Box" FromRole="Device" ToRole="Box" />
-    <NavigationProperty Name="Screen" Relationship="WiSkyEntities.FK_DeviceMatching_Screen" FromRole="Device" ToRole="Screen" />
-    <NavigationProperty Name="DeviceScenarios" Relationship="WiSkyEntities.FK_DeviceScenario_Device" FromRole="Device" ToRole="DeviceScenario" />
+    <NavigationProperty Name="Box" Relationship="DSSEntities.FK_DeviceMatching_Box" FromRole="Device" ToRole="Box" />
+    <NavigationProperty Name="Screen" Relationship="DSSEntities.FK_DeviceMatching_Screen" FromRole="Device" ToRole="Screen" />
+    <NavigationProperty Name="DeviceScenarios" Relationship="DSSEntities.FK_DeviceScenario_Device" FromRole="Device" ToRole="DeviceScenario" />
   </EntityType>
   <EntityType Name="DeviceScenario">
     <Key>
@@ -212,8 +212,8 @@
     <Property Name="TimesToPlay" Type="Int32" />
     <Property Name="StartTime" Type="DateTime" Nullable="false" Precision="3" />
     <Property Name="EndTime" Type="DateTime" Nullable="false" Precision="3" />
-    <NavigationProperty Name="Device" Relationship="WiSkyEntities.FK_DeviceScenario_Device" FromRole="DeviceScenario" ToRole="Device" />
-    <NavigationProperty Name="Scenario" Relationship="WiSkyEntities.FK_DeviceScenario_Scenario" FromRole="DeviceScenario" ToRole="Scenario" />
+    <NavigationProperty Name="Device" Relationship="DSSEntities.FK_DeviceScenario_Device" FromRole="DeviceScenario" ToRole="Device" />
+    <NavigationProperty Name="Scenario" Relationship="DSSEntities.FK_DeviceScenario_Scenario" FromRole="DeviceScenario" ToRole="Scenario" />
   </EntityType>
   <EntityType Name="Layout">
     <Key>
@@ -222,8 +222,8 @@
     <Property Name="LayoutID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="Title" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="AreasNum" Type="Int32" Nullable="false" />
-    <NavigationProperty Name="Areas" Relationship="WiSkyEntities.FK_Area_Layout" FromRole="Layout" ToRole="Area" />
-    <NavigationProperty Name="Scenarios" Relationship="WiSkyEntities.FK_Scenario_Layout" FromRole="Layout" ToRole="Scenario" />
+    <NavigationProperty Name="Areas" Relationship="DSSEntities.FK_Area_Layout" FromRole="Layout" ToRole="Area" />
+    <NavigationProperty Name="Scenarios" Relationship="DSSEntities.FK_Scenario_Layout" FromRole="Layout" ToRole="Scenario" />
   </EntityType>
   <EntityType Name="Location">
     <Key>
@@ -236,9 +236,9 @@
     <Property Name="Address" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
     <Property Name="CreateDatetime" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
     <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-    <NavigationProperty Name="Boxes" Relationship="WiSkyEntities.FK_Box_Location" FromRole="Location" ToRole="Box" />
-    <NavigationProperty Name="Brand" Relationship="WiSkyEntities.FK_Location_Brand" FromRole="Location" ToRole="Brand" />
-    <NavigationProperty Name="Screens" Relationship="WiSkyEntities.FK_Screen_Location" FromRole="Location" ToRole="Screen" />
+    <NavigationProperty Name="Boxes" Relationship="DSSEntities.FK_Box_Location" FromRole="Location" ToRole="Box" />
+    <NavigationProperty Name="Brand" Relationship="DSSEntities.FK_Location_Brand" FromRole="Location" ToRole="Brand" />
+    <NavigationProperty Name="Screens" Relationship="DSSEntities.FK_Screen_Location" FromRole="Location" ToRole="Screen" />
   </EntityType>
   <EntityType Name="MediaSrc">
     <Key>
@@ -253,9 +253,9 @@
     <Property Name="UpdateDatetime" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
     <Property Name="CreateDatetime" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
     <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-    <NavigationProperty Name="Brand" Relationship="WiSkyEntities.FK_MediaSrc_Brand" FromRole="MediaSrc" ToRole="Brand" />
-    <NavigationProperty Name="MediaType" Relationship="WiSkyEntities.FK_MediaSrc_MediaType" FromRole="MediaSrc" ToRole="MediaType" />
-    <NavigationProperty Name="PlaylistItems" Relationship="WiSkyEntities.FK_PlaylistItem_MediaSrc" FromRole="MediaSrc" ToRole="PlaylistItem" />
+    <NavigationProperty Name="Brand" Relationship="DSSEntities.FK_MediaSrc_Brand" FromRole="MediaSrc" ToRole="Brand" />
+    <NavigationProperty Name="MediaType" Relationship="DSSEntities.FK_MediaSrc_MediaType" FromRole="MediaSrc" ToRole="MediaType" />
+    <NavigationProperty Name="PlaylistItems" Relationship="DSSEntities.FK_PlaylistItem_MediaSrc" FromRole="MediaSrc" ToRole="PlaylistItem" />
   </EntityType>
   <EntityType Name="MediaType">
     <Key>
@@ -264,7 +264,7 @@
     <Property Name="TypeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-    <NavigationProperty Name="MediaSrcs" Relationship="WiSkyEntities.FK_MediaSrc_MediaType" FromRole="MediaType" ToRole="MediaSrc" />
+    <NavigationProperty Name="MediaSrcs" Relationship="DSSEntities.FK_MediaSrc_MediaType" FromRole="MediaType" ToRole="MediaSrc" />
   </EntityType>
   <EntityType Name="Playlist">
     <Key>
@@ -273,8 +273,8 @@
     <Property Name="PlaylistID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="Title" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
     <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-    <NavigationProperty Name="PlaylistItems" Relationship="WiSkyEntities.FK_PlaylistItem_Playlist" FromRole="Playlist" ToRole="PlaylistItem" />
-    <NavigationProperty Name="ScenarioItems" Relationship="WiSkyEntities.FK_PlaylistScenarioArea_Playlist" FromRole="Playlist" ToRole="ScenarioItem" />
+    <NavigationProperty Name="PlaylistItems" Relationship="DSSEntities.FK_PlaylistItem_Playlist" FromRole="Playlist" ToRole="PlaylistItem" />
+    <NavigationProperty Name="ScenarioItems" Relationship="DSSEntities.FK_PlaylistScenarioArea_Playlist" FromRole="Playlist" ToRole="ScenarioItem" />
   </EntityType>
   <EntityType Name="PlaylistItem">
     <Key>
@@ -285,8 +285,8 @@
     <Property Name="PlaylistID" Type="Int32" Nullable="false" />
     <Property Name="DisplayOrder" Type="Int32" Nullable="false" />
     <Property Name="Duration" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
-    <NavigationProperty Name="MediaSrc" Relationship="WiSkyEntities.FK_PlaylistItem_MediaSrc" FromRole="PlaylistItem" ToRole="MediaSrc" />
-    <NavigationProperty Name="Playlist" Relationship="WiSkyEntities.FK_PlaylistItem_Playlist" FromRole="PlaylistItem" ToRole="Playlist" />
+    <NavigationProperty Name="MediaSrc" Relationship="DSSEntities.FK_PlaylistItem_MediaSrc" FromRole="PlaylistItem" ToRole="MediaSrc" />
+    <NavigationProperty Name="Playlist" Relationship="DSSEntities.FK_PlaylistItem_Playlist" FromRole="PlaylistItem" ToRole="Playlist" />
   </EntityType>
   <EntityType Name="Resolution">
     <Key>
@@ -296,7 +296,7 @@
     <Property Name="Width" Type="Double" Nullable="false" />
     <Property Name="Height" Type="Double" Nullable="false" />
     <Property Name="Note" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-    <NavigationProperty Name="Screens" Relationship="WiSkyEntities.FK_Screen_Resolution" FromRole="Resolution" ToRole="Screen" />
+    <NavigationProperty Name="Screens" Relationship="DSSEntities.FK_Screen_Resolution" FromRole="Resolution" ToRole="Screen" />
   </EntityType>
   <EntityType Name="Role">
     <Key>
@@ -305,7 +305,7 @@
     <Property Name="RoleID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="RoleName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
     <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-    <NavigationProperty Name="Accounts" Relationship="WiSkyEntities.FK_Account_Role" FromRole="Role" ToRole="Account" />
+    <NavigationProperty Name="Accounts" Relationship="DSSEntities.FK_Account_Role" FromRole="Role" ToRole="Account" />
   </EntityType>
   <EntityType Name="Scenario">
     <Key>
@@ -315,9 +315,9 @@
     <Property Name="LayoutID" Type="Int32" Nullable="false" />
     <Property Name="Title" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-    <NavigationProperty Name="DeviceScenarios" Relationship="WiSkyEntities.FK_DeviceScenario_Scenario" FromRole="Scenario" ToRole="DeviceScenario" />
-    <NavigationProperty Name="Layout" Relationship="WiSkyEntities.FK_Scenario_Layout" FromRole="Scenario" ToRole="Layout" />
-    <NavigationProperty Name="ScenarioItems" Relationship="WiSkyEntities.FK_PlaylistScenarioArea_Scenario" FromRole="Scenario" ToRole="ScenarioItem" />
+    <NavigationProperty Name="DeviceScenarios" Relationship="DSSEntities.FK_DeviceScenario_Scenario" FromRole="Scenario" ToRole="DeviceScenario" />
+    <NavigationProperty Name="Layout" Relationship="DSSEntities.FK_Scenario_Layout" FromRole="Scenario" ToRole="Layout" />
+    <NavigationProperty Name="ScenarioItems" Relationship="DSSEntities.FK_PlaylistScenarioArea_Scenario" FromRole="Scenario" ToRole="ScenarioItem" />
   </EntityType>
   <EntityType Name="ScenarioItem">
     <Key>
@@ -329,9 +329,9 @@
     <Property Name="AreaID" Type="Int32" Nullable="false" />
     <Property Name="DisplayOrder" Type="Int32" Nullable="false" />
     <Property Name="Note" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-    <NavigationProperty Name="Area" Relationship="WiSkyEntities.FK_ScenarioItem_Area" FromRole="ScenarioItem" ToRole="Area" />
-    <NavigationProperty Name="Playlist" Relationship="WiSkyEntities.FK_PlaylistScenarioArea_Playlist" FromRole="ScenarioItem" ToRole="Playlist" />
-    <NavigationProperty Name="Scenario" Relationship="WiSkyEntities.FK_PlaylistScenarioArea_Scenario" FromRole="ScenarioItem" ToRole="Scenario" />
+    <NavigationProperty Name="Area" Relationship="DSSEntities.FK_ScenarioItem_Area" FromRole="ScenarioItem" ToRole="Area" />
+    <NavigationProperty Name="Playlist" Relationship="DSSEntities.FK_PlaylistScenarioArea_Playlist" FromRole="ScenarioItem" ToRole="Playlist" />
+    <NavigationProperty Name="Scenario" Relationship="DSSEntities.FK_PlaylistScenarioArea_Scenario" FromRole="ScenarioItem" ToRole="Scenario" />
   </EntityType>
   <EntityType Name="Screen">
     <Key>
@@ -342,13 +342,13 @@
     <Property Name="ResolutionID" Type="Int32" Nullable="false" />
     <Property Name="ScreenName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-    <NavigationProperty Name="Devices" Relationship="WiSkyEntities.FK_DeviceMatching_Screen" FromRole="Screen" ToRole="Device" />
-    <NavigationProperty Name="Location" Relationship="WiSkyEntities.FK_Screen_Location" FromRole="Screen" ToRole="Location" />
-    <NavigationProperty Name="Resolution" Relationship="WiSkyEntities.FK_Screen_Resolution" FromRole="Screen" ToRole="Resolution" />
+    <NavigationProperty Name="Devices" Relationship="DSSEntities.FK_DeviceMatching_Screen" FromRole="Screen" ToRole="Device" />
+    <NavigationProperty Name="Location" Relationship="DSSEntities.FK_Screen_Location" FromRole="Screen" ToRole="Location" />
+    <NavigationProperty Name="Resolution" Relationship="DSSEntities.FK_Screen_Resolution" FromRole="Screen" ToRole="Resolution" />
   </EntityType>
   <Association Name="FK_Account_Brand">
-    <End Type="WiSkyEntities.Brand" Role="Brand" Multiplicity="1" />
-    <End Type="WiSkyEntities.Account" Role="Account" Multiplicity="*" />
+    <End Type="DSSEntities.Brand" Role="Brand" Multiplicity="1" />
+    <End Type="DSSEntities.Account" Role="Account" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Brand">
         <PropertyRef Name="BrandID" />
@@ -359,8 +359,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_Account_Role">
-    <End Type="WiSkyEntities.Role" Role="Role" Multiplicity="0..1" />
-    <End Type="WiSkyEntities.Account" Role="Account" Multiplicity="*" />
+    <End Type="DSSEntities.Role" Role="Role" Multiplicity="0..1" />
+    <End Type="DSSEntities.Account" Role="Account" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Role">
         <PropertyRef Name="RoleID" />
@@ -371,8 +371,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_Area_Layout">
-    <End Type="WiSkyEntities.Layout" Role="Layout" Multiplicity="1" />
-    <End Type="WiSkyEntities.Area" Role="Area" Multiplicity="*" />
+    <End Type="DSSEntities.Layout" Role="Layout" Multiplicity="1" />
+    <End Type="DSSEntities.Area" Role="Area" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Layout">
         <PropertyRef Name="LayoutID" />
@@ -383,8 +383,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_ScenarioItem_Area">
-    <End Type="WiSkyEntities.Area" Role="Area" Multiplicity="1" />
-    <End Type="WiSkyEntities.ScenarioItem" Role="ScenarioItem" Multiplicity="*" />
+    <End Type="DSSEntities.Area" Role="Area" Multiplicity="1" />
+    <End Type="DSSEntities.ScenarioItem" Role="ScenarioItem" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Area">
         <PropertyRef Name="AreaID" />
@@ -395,8 +395,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_Box_Location">
-    <End Type="WiSkyEntities.Location" Role="Location" Multiplicity="1" />
-    <End Type="WiSkyEntities.Box" Role="Box" Multiplicity="*" />
+    <End Type="DSSEntities.Location" Role="Location" Multiplicity="1" />
+    <End Type="DSSEntities.Box" Role="Box" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Location">
         <PropertyRef Name="LocationID" />
@@ -407,8 +407,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_DeviceMatching_Box">
-    <End Type="WiSkyEntities.Box" Role="Box" Multiplicity="1" />
-    <End Type="WiSkyEntities.Device" Role="Device" Multiplicity="*" />
+    <End Type="DSSEntities.Box" Role="Box" Multiplicity="1" />
+    <End Type="DSSEntities.Device" Role="Device" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Box">
         <PropertyRef Name="BoxID" />
@@ -419,8 +419,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_Location_Brand">
-    <End Type="WiSkyEntities.Brand" Role="Brand" Multiplicity="1" />
-    <End Type="WiSkyEntities.Location" Role="Location" Multiplicity="*" />
+    <End Type="DSSEntities.Brand" Role="Brand" Multiplicity="1" />
+    <End Type="DSSEntities.Location" Role="Location" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Brand">
         <PropertyRef Name="BrandID" />
@@ -431,8 +431,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_MediaSrc_Brand">
-    <End Type="WiSkyEntities.Brand" Role="Brand" Multiplicity="1" />
-    <End Type="WiSkyEntities.MediaSrc" Role="MediaSrc" Multiplicity="*" />
+    <End Type="DSSEntities.Brand" Role="Brand" Multiplicity="1" />
+    <End Type="DSSEntities.MediaSrc" Role="MediaSrc" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Brand">
         <PropertyRef Name="BrandID" />
@@ -443,8 +443,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_DeviceMatching_Screen">
-    <End Type="WiSkyEntities.Screen" Role="Screen" Multiplicity="1" />
-    <End Type="WiSkyEntities.Device" Role="Device" Multiplicity="*" />
+    <End Type="DSSEntities.Screen" Role="Screen" Multiplicity="1" />
+    <End Type="DSSEntities.Device" Role="Device" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Screen">
         <PropertyRef Name="ScreenID" />
@@ -455,8 +455,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_DeviceScenario_Device">
-    <End Type="WiSkyEntities.Device" Role="Device" Multiplicity="1" />
-    <End Type="WiSkyEntities.DeviceScenario" Role="DeviceScenario" Multiplicity="*" />
+    <End Type="DSSEntities.Device" Role="Device" Multiplicity="1" />
+    <End Type="DSSEntities.DeviceScenario" Role="DeviceScenario" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Device">
         <PropertyRef Name="DeviceID" />
@@ -467,8 +467,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_DeviceScenario_Scenario">
-    <End Type="WiSkyEntities.Scenario" Role="Scenario" Multiplicity="1" />
-    <End Type="WiSkyEntities.DeviceScenario" Role="DeviceScenario" Multiplicity="*" />
+    <End Type="DSSEntities.Scenario" Role="Scenario" Multiplicity="1" />
+    <End Type="DSSEntities.DeviceScenario" Role="DeviceScenario" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Scenario">
         <PropertyRef Name="ScenarioID" />
@@ -479,8 +479,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_Scenario_Layout">
-    <End Type="WiSkyEntities.Layout" Role="Layout" Multiplicity="1" />
-    <End Type="WiSkyEntities.Scenario" Role="Scenario" Multiplicity="*" />
+    <End Type="DSSEntities.Layout" Role="Layout" Multiplicity="1" />
+    <End Type="DSSEntities.Scenario" Role="Scenario" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Layout">
         <PropertyRef Name="LayoutID" />
@@ -491,8 +491,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_Screen_Location">
-    <End Type="WiSkyEntities.Location" Role="Location" Multiplicity="1" />
-    <End Type="WiSkyEntities.Screen" Role="Screen" Multiplicity="*" />
+    <End Type="DSSEntities.Location" Role="Location" Multiplicity="1" />
+    <End Type="DSSEntities.Screen" Role="Screen" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Location">
         <PropertyRef Name="LocationID" />
@@ -503,8 +503,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_MediaSrc_MediaType">
-    <End Type="WiSkyEntities.MediaType" Role="MediaType" Multiplicity="1" />
-    <End Type="WiSkyEntities.MediaSrc" Role="MediaSrc" Multiplicity="*" />
+    <End Type="DSSEntities.MediaType" Role="MediaType" Multiplicity="1" />
+    <End Type="DSSEntities.MediaSrc" Role="MediaSrc" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="MediaType">
         <PropertyRef Name="TypeID" />
@@ -515,8 +515,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_PlaylistItem_MediaSrc">
-    <End Type="WiSkyEntities.MediaSrc" Role="MediaSrc" Multiplicity="1" />
-    <End Type="WiSkyEntities.PlaylistItem" Role="PlaylistItem" Multiplicity="*" />
+    <End Type="DSSEntities.MediaSrc" Role="MediaSrc" Multiplicity="1" />
+    <End Type="DSSEntities.PlaylistItem" Role="PlaylistItem" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="MediaSrc">
         <PropertyRef Name="MediaSrcID" />
@@ -527,8 +527,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_PlaylistItem_Playlist">
-    <End Type="WiSkyEntities.Playlist" Role="Playlist" Multiplicity="1" />
-    <End Type="WiSkyEntities.PlaylistItem" Role="PlaylistItem" Multiplicity="*" />
+    <End Type="DSSEntities.Playlist" Role="Playlist" Multiplicity="1" />
+    <End Type="DSSEntities.PlaylistItem" Role="PlaylistItem" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Playlist">
         <PropertyRef Name="PlaylistID" />
@@ -539,8 +539,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_PlaylistScenarioArea_Playlist">
-    <End Type="WiSkyEntities.Playlist" Role="Playlist" Multiplicity="1" />
-    <End Type="WiSkyEntities.ScenarioItem" Role="ScenarioItem" Multiplicity="*" />
+    <End Type="DSSEntities.Playlist" Role="Playlist" Multiplicity="1" />
+    <End Type="DSSEntities.ScenarioItem" Role="ScenarioItem" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Playlist">
         <PropertyRef Name="PlaylistID" />
@@ -551,8 +551,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_Screen_Resolution">
-    <End Type="WiSkyEntities.Resolution" Role="Resolution" Multiplicity="1" />
-    <End Type="WiSkyEntities.Screen" Role="Screen" Multiplicity="*" />
+    <End Type="DSSEntities.Resolution" Role="Resolution" Multiplicity="1" />
+    <End Type="DSSEntities.Screen" Role="Screen" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Resolution">
         <PropertyRef Name="ResolutionID" />
@@ -563,8 +563,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_PlaylistScenarioArea_Scenario">
-    <End Type="WiSkyEntities.Scenario" Role="Scenario" Multiplicity="1" />
-    <End Type="WiSkyEntities.ScenarioItem" Role="ScenarioItem" Multiplicity="*" />
+    <End Type="DSSEntities.Scenario" Role="Scenario" Multiplicity="1" />
+    <End Type="DSSEntities.ScenarioItem" Role="ScenarioItem" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Scenario">
         <PropertyRef Name="ScenarioID" />

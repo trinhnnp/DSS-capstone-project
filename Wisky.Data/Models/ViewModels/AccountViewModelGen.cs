@@ -7,12 +7,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Wisky.Data.Models.ViewModels
+namespace DSS.Data.Models.ViewModels
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class AccountViewModel : SkyWeb.DatVM.Mvc.BaseEntityViewModel<Wisky.Data.Models.Entities.Account>
+    public partial class AccountViewModel : SkyWeb.DatVM.Mvc.BaseEntityViewModel<DSS.Data.Models.Entities.Account>
     {
     	
     			public virtual int AccountID { get; set; }
@@ -25,7 +25,7 @@ namespace Wisky.Data.Models.ViewModels
     			public virtual string CreateDatetime { get; set; }
     	
     	public AccountViewModel() : base() { }
-    	public AccountViewModel(Wisky.Data.Models.Entities.Account entity) : base(entity) { }
+    	public AccountViewModel(DSS.Data.Models.Entities.Account entity) : base(entity) { }
     
     }
 }

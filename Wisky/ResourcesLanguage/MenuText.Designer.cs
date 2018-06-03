@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Wisky.ResourcesLanguage {
+namespace DSS.ResourcesLanguage {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace Wisky.ResourcesLanguage {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Wisky.ResourcesLanguage.MenuText", typeof(MenuText).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("DSS.ResourcesLanguage.MenuText", typeof(MenuText).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

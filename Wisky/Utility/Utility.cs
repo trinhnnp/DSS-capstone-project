@@ -8,7 +8,6 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Web;
-using Wisky.Data.Models.Entities;
 using Wisky.Data.Utility;
 using Wisky.Redis;
 
