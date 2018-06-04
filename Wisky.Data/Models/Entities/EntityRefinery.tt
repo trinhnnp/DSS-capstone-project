@@ -4,7 +4,7 @@
 <#@ import namespace="System.Linq" #>
  <#
 
-const string inputFile = @"WiSkyEntities.edmx";
+const string inputFile = @"DSSEntities.edmx";
 var textTransform = DynamicTextTransformation.Create(this);
 var code = new CodeGenerationTools(this);
 var ef = new MetadataTools(this);

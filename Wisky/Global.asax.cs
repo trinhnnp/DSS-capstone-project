@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using DSS.Data.Models.Entities;
 using SkyWeb.DatVM.Data;
 using SkyWeb.DatVM.Mvc.Autofac;
 using System;
@@ -8,8 +9,6 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 //using Wisky.Areas.Publisher.Models;
-using Wisky.Data.Models.Entities;
-using Wisky.Data.Models.ViewModels;
 
 namespace Wisky
 {
@@ -23,14 +22,14 @@ namespace Wisky
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
             AutofacInitializer.Initialize(
-                typeof(WiSkyEntities).Assembly,
-                typeof(WiSkyEntities),
+                typeof(DSSEntities).Assembly,
+                typeof(DSSEntities),
                 new MapperConfiguration(this.AutoMapperConfig));
         }
 
         private void AutoMapperConfig(IMapperConfiguration config)
         {
-            var assembly = typeof(WiSkyEntities).Assembly;
+            var assembly = typeof(DSSEntities).Assembly;
             var entityInterface = typeof(IEntity);
 
             var entityTypes = assembly.DefinedTypes.Where(q => entityInterface.IsAssignableFrom(q));

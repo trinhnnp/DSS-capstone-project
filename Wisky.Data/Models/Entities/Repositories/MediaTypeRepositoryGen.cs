@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Wisky.Data.Models.Entities.Repositories
+namespace DSS.Data.Models.Entities.Repositories
 {
     using System;
     using System.Collections.Generic;

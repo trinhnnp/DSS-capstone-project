@@ -7,12 +7,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Wisky.Data.Models.ViewModels
+namespace DSS.Data.Models.ViewModels
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class ResolutionViewModel : SkyWeb.DatVM.Mvc.BaseEntityViewModel<Wisky.Data.Models.Entities.Resolution>
+    public partial class ResolutionViewModel : SkyWeb.DatVM.Mvc.BaseEntityViewModel<DSS.Data.Models.Entities.Resolution>
     {
     	
     			public virtual int ResolutionID { get; set; }
@@ -21,7 +21,7 @@ namespace Wisky.Data.Models.ViewModels
     			public virtual string Note { get; set; }
     	
     	public ResolutionViewModel() : base() { }
-    	public ResolutionViewModel(Wisky.Data.Models.Entities.Resolution entity) : base(entity) { }
+    	public ResolutionViewModel(DSS.Data.Models.Entities.Resolution entity) : base(entity) { }
     
     }
 }

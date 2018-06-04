@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Wisky.ResourcesLanguage {
+namespace DSS.ResourcesLanguage {
     using System;
     
     
@@ -19,10 +19,10 @@ namespace Wisky.ResourcesLanguage {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class LayoutManage {
+    internal class LayoutManage {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,10 +36,10 @@ namespace Wisky.ResourcesLanguage {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        public static global::System.Resources.ResourceManager ResourceManager {
+        internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Wisky.ResourcesLanguage.LayoutManage", typeof(LayoutManage).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("DSS.ResourcesLanguage.LayoutManage", typeof(LayoutManage).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -51,7 +51,7 @@ namespace Wisky.ResourcesLanguage {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        public static global::System.Globalization.CultureInfo Culture {
+        internal static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -59,101 +59,101 @@ namespace Wisky.ResourcesLanguage {
                 resourceCulture = value;
             }
         }
-
+        
         /// <summary>
         ///   Looks up a localized string similar to Active.
         /// </summary>
-        public static string Active {
+        internal static string Active {
             get {
                 return ResourceManager.GetString("Active", resourceCulture);
             }
         }
-
+        
         /// <summary>
         ///   Looks up a localized string similar to Add New.
         /// </summary>
-        public static string AddNew {
+        internal static string AddNew {
             get {
                 return ResourceManager.GetString("AddNew", resourceCulture);
             }
         }
-
+        
         /// <summary>
         ///   Looks up a localized string similar to Description.
         /// </summary>
-        public static string Description {
+        internal static string Description {
             get {
                 return ResourceManager.GetString("Description", resourceCulture);
             }
         }
-
+        
         /// <summary>
         ///   Looks up a localized string similar to IsTemplate.
         /// </summary>
-        public static string IsTemplate {
+        internal static string IsTemplate {
             get {
                 return ResourceManager.GetString("IsTemplate", resourceCulture);
             }
         }
-
+        
         /// <summary>
         ///   Looks up a localized string similar to Manage Layout.
         /// </summary>
-        public static string LayoutManager {
+        internal static string LayoutManager {
             get {
                 return ResourceManager.GetString("LayoutManager", resourceCulture);
             }
         }
-
+        
         /// <summary>
         ///   Looks up a localized string similar to Name.
         /// </summary>
-        public static string Name {
+        internal static string Name {
             get {
                 return ResourceManager.GetString("Name", resourceCulture);
             }
         }
-
+        
         /// <summary>
         ///   Looks up a localized string similar to No..
         /// </summary>
-        public static string No {
+        internal static string No {
             get {
                 return ResourceManager.GetString("No", resourceCulture);
             }
         }
-
+        
         /// <summary>
         ///   Looks up a localized string similar to Region Index.
         /// </summary>
-        public static string RegionIndex {
+        internal static string RegionIndex {
             get {
                 return ResourceManager.GetString("RegionIndex", resourceCulture);
             }
         }
-
+        
         /// <summary>
         ///   Looks up a localized string similar to Region Information.
         /// </summary>
-        public static string RegionInfo {
+        internal static string RegionInfo {
             get {
                 return ResourceManager.GetString("RegionInfo", resourceCulture);
             }
         }
-
+        
         /// <summary>
         ///   Looks up a localized string similar to Resolution Name.
         /// </summary>
-        public static string ResolutionName {
+        internal static string ResolutionName {
             get {
                 return ResourceManager.GetString("ResolutionName", resourceCulture);
             }
         }
-
+        
         /// <summary>
         ///   Looks up a localized string similar to Status.
         /// </summary>
-        public static string Status {
+        internal static string Status {
             get {
                 return ResourceManager.GetString("Status", resourceCulture);
             }

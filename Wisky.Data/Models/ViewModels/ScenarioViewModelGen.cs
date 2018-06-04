@@ -7,12 +7,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Wisky.Data.Models.ViewModels
+namespace DSS.Data.Models.ViewModels
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class ScenarioViewModel : SkyWeb.DatVM.Mvc.BaseEntityViewModel<Wisky.Data.Models.Entities.Scenario>
+    public partial class ScenarioViewModel : SkyWeb.DatVM.Mvc.BaseEntityViewModel<DSS.Data.Models.Entities.Scenario>
     {
     	
     			public virtual int ScenarioID { get; set; }
@@ -21,7 +21,7 @@ namespace Wisky.Data.Models.ViewModels
     			public virtual string Description { get; set; }
     	
     	public ScenarioViewModel() : base() { }
-    	public ScenarioViewModel(Wisky.Data.Models.Entities.Scenario entity) : base(entity) { }
+    	public ScenarioViewModel(DSS.Data.Models.Entities.Scenario entity) : base(entity) { }
     
     }
 }

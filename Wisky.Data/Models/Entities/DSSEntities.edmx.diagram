@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="60dd0cc3d4c5407098ce42826cda126c" Name="Diagram1">
+        <EntityTypeShape EntityType="DSSModel.Account" Width="1.5" PointX="3" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DSSModel.Area" Width="1.5" PointX="7.5" PointY="20" IsExpanded="true" />
+        <EntityTypeShape EntityType="DSSModel.AspNetRole" Width="1.5" PointX="7.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DSSModel.AspNetUserClaim" Width="1.5" PointX="12.25" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DSSModel.AspNetUserLogin" Width="1.5" PointX="12.25" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DSSModel.AspNetUser" Width="1.5" PointX="10" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DSSModel.Box" Width="1.5" PointX="5.25" PointY="12.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DSSModel.Brand" Width="1.5" PointX="0.75" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DSSModel.Device" Width="1.5" PointX="7.5" PointY="12.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DSSModel.DeviceScenario" Width="1.5" PointX="9.75" PointY="12.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DSSModel.Layout" Width="1.5" PointX="5.25" PointY="16.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DSSModel.Location" Width="1.5" PointX="3" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="DSSModel.MediaSrc" Width="1.5" PointX="3" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DSSModel.MediaType" Width="1.5" PointX="0.75" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DSSModel.Playlist" Width="1.5" PointX="3.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DSSModel.PlaylistItem" Width="1.5" PointX="5.25" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DSSModel.Resolution" Width="1.5" PointX="3" PointY="16.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DSSModel.Role" Width="1.5" PointX="0.75" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DSSModel.Scenario" Width="1.5" PointX="7.5" PointY="16.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DSSModel.ScenarioItem" Width="1.5" PointX="9.75" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DSSModel.Screen" Width="1.5" PointX="5.25" PointY="8.125" IsExpanded="true" />
+        <AssociationConnector Association="DSSModel.FK_Account_Brand" ManuallyRouted="false" />
+        <AssociationConnector Association="DSSModel.FK_Account_Role" ManuallyRouted="false" />
+        <AssociationConnector Association="DSSModel.FK_Area_Layout" ManuallyRouted="false" />
+        <AssociationConnector Association="DSSModel.FK_ScenarioItem_Area" ManuallyRouted="false" />
+        <AssociationConnector Association="DSSModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="DSSModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="DSSModel.FK_Box_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="DSSModel.FK_DeviceMatching_Box" ManuallyRouted="false" />
+        <AssociationConnector Association="DSSModel.FK_Location_Brand" ManuallyRouted="false" />
+        <AssociationConnector Association="DSSModel.FK_MediaSrc_Brand" ManuallyRouted="false" />
+        <AssociationConnector Association="DSSModel.FK_DeviceMatching_Screen" ManuallyRouted="false" />
+        <AssociationConnector Association="DSSModel.FK_DeviceScenario_Device" ManuallyRouted="false" />
+        <AssociationConnector Association="DSSModel.FK_DeviceScenario_Scenario" ManuallyRouted="false" />
+        <AssociationConnector Association="DSSModel.FK_Scenario_Layout" ManuallyRouted="false" />
+        <AssociationConnector Association="DSSModel.FK_Screen_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="DSSModel.FK_MediaSrc_MediaType" ManuallyRouted="false" />
+        <AssociationConnector Association="DSSModel.FK_PlaylistItem_MediaSrc" ManuallyRouted="false" />
+        <AssociationConnector Association="DSSModel.FK_PlaylistItem_Playlist" ManuallyRouted="false" />
+        <AssociationConnector Association="DSSModel.FK_PlaylistScenarioArea_Playlist" ManuallyRouted="false" />
+        <AssociationConnector Association="DSSModel.FK_Screen_Resolution" ManuallyRouted="false" />
+        <AssociationConnector Association="DSSModel.FK_PlaylistScenarioArea_Scenario" ManuallyRouted="false" />
+        <AssociationConnector Association="DSSModel.AspNetUserRoles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -7,12 +7,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Wisky.Data.Models.ViewModels
+namespace DSS.Data.Models.ViewModels
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class DeviceScenarioViewModel : SkyWeb.DatVM.Mvc.BaseEntityViewModel<Wisky.Data.Models.Entities.DeviceScenario>
+    public partial class DeviceScenarioViewModel : SkyWeb.DatVM.Mvc.BaseEntityViewModel<DSS.Data.Models.Entities.DeviceScenario>
     {
     	
     			public virtual int DeviceScenationID { get; set; }
@@ -23,7 +23,7 @@ namespace Wisky.Data.Models.ViewModels
     			public virtual System.DateTime EndTime { get; set; }
     	
     	public DeviceScenarioViewModel() : base() { }
-    	public DeviceScenarioViewModel(Wisky.Data.Models.Entities.DeviceScenario entity) : base(entity) { }
+    	public DeviceScenarioViewModel(DSS.Data.Models.Entities.DeviceScenario entity) : base(entity) { }
     
     }
 }

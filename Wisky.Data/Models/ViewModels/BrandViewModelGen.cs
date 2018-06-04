@@ -7,12 +7,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Wisky.Data.Models.ViewModels
+namespace DSS.Data.Models.ViewModels
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class BrandViewModel : SkyWeb.DatVM.Mvc.BaseEntityViewModel<Wisky.Data.Models.Entities.Brand>
+    public partial class BrandViewModel : SkyWeb.DatVM.Mvc.BaseEntityViewModel<DSS.Data.Models.Entities.Brand>
     {
     	
     			public virtual int BrandID { get; set; }
@@ -21,7 +21,7 @@ namespace Wisky.Data.Models.ViewModels
     			public virtual string Description { get; set; }
     	
     	public BrandViewModel() : base() { }
-    	public BrandViewModel(Wisky.Data.Models.Entities.Brand entity) : base(entity) { }
+    	public BrandViewModel(DSS.Data.Models.Entities.Brand entity) : base(entity) { }
     
     }
 }

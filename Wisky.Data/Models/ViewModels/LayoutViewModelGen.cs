@@ -7,12 +7,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Wisky.Data.Models.ViewModels
+namespace DSS.Data.Models.ViewModels
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class LayoutViewModel : SkyWeb.DatVM.Mvc.BaseEntityViewModel<Wisky.Data.Models.Entities.Layout>
+    public partial class LayoutViewModel : SkyWeb.DatVM.Mvc.BaseEntityViewModel<DSS.Data.Models.Entities.Layout>
     {
     	
     			public virtual int LayoutID { get; set; }
@@ -20,7 +20,7 @@ namespace Wisky.Data.Models.ViewModels
     			public virtual int AreasNum { get; set; }
     	
     	public LayoutViewModel() : base() { }
-    	public LayoutViewModel(Wisky.Data.Models.Entities.Layout entity) : base(entity) { }
+    	public LayoutViewModel(DSS.Data.Models.Entities.Layout entity) : base(entity) { }
     
     }
 }

@@ -7,12 +7,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Wisky.Data.Models.ViewModels
+namespace DSS.Data.Models.ViewModels
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class MediaTypeViewModel : SkyWeb.DatVM.Mvc.BaseEntityViewModel<Wisky.Data.Models.Entities.MediaType>
+    public partial class MediaTypeViewModel : SkyWeb.DatVM.Mvc.BaseEntityViewModel<DSS.Data.Models.Entities.MediaType>
     {
     	
     			public virtual int TypeID { get; set; }
@@ -20,7 +20,7 @@ namespace Wisky.Data.Models.ViewModels
     			public virtual string Description { get; set; }
     	
     	public MediaTypeViewModel() : base() { }
-    	public MediaTypeViewModel(Wisky.Data.Models.Entities.MediaType entity) : base(entity) { }
+    	public MediaTypeViewModel(DSS.Data.Models.Entities.MediaType entity) : base(entity) { }
     
     }
 }

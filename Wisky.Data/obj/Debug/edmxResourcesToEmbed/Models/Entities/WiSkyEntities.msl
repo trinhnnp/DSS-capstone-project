@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="WiSkyEntitiesStoreContainer" CdmEntityContainer="Entities">
+  <EntityContainerMapping StorageEntityContainer="DSSEntitiesStoreContainer" CdmEntityContainer="Entities">
     <EntitySetMapping Name="Accounts">
-      <EntityTypeMapping TypeName="WiSkyEntities.Account">
+      <EntityTypeMapping TypeName="DSSEntities.Account">
         <MappingFragment StoreEntitySet="Account">
           <ScalarProperty Name="CreateDatetime" ColumnName="CreateDatetime" />
           <ScalarProperty Name="Fullname" ColumnName="Fullname" />
@@ -16,7 +16,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Areas">
-      <EntityTypeMapping TypeName="WiSkyEntities.Area">
+      <EntityTypeMapping TypeName="DSSEntities.Area">
         <MappingFragment StoreEntitySet="Area">
           <ScalarProperty Name="Note" ColumnName="Note" />
           <ScalarProperty Name="Y2Postition" ColumnName="Y2Postition" />
@@ -30,7 +30,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Boxes">
-      <EntityTypeMapping TypeName="WiSkyEntities.Box">
+      <EntityTypeMapping TypeName="DSSEntities.Box">
         <MappingFragment StoreEntitySet="Box">
           <ScalarProperty Name="Description" ColumnName="Description" />
           <ScalarProperty Name="BoxName" ColumnName="BoxName" />
@@ -40,7 +40,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Brands">
-      <EntityTypeMapping TypeName="WiSkyEntities.Brand">
+      <EntityTypeMapping TypeName="DSSEntities.Brand">
         <MappingFragment StoreEntitySet="Brand">
           <ScalarProperty Name="Description" ColumnName="Description" />
           <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
@@ -50,7 +50,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Devices">
-      <EntityTypeMapping TypeName="WiSkyEntities.Device">
+      <EntityTypeMapping TypeName="DSSEntities.Device">
         <MappingFragment StoreEntitySet="Device">
           <ScalarProperty Name="Description" ColumnName="Description" />
           <ScalarProperty Name="CreateDatetime" ColumnName="CreateDatetime" />
@@ -61,7 +61,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="DeviceScenarios">
-      <EntityTypeMapping TypeName="WiSkyEntities.DeviceScenario">
+      <EntityTypeMapping TypeName="DSSEntities.DeviceScenario">
         <MappingFragment StoreEntitySet="DeviceScenario">
           <ScalarProperty Name="EndTime" ColumnName="EndTime" />
           <ScalarProperty Name="StartTime" ColumnName="StartTime" />
@@ -73,7 +73,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Layouts">
-      <EntityTypeMapping TypeName="WiSkyEntities.Layout">
+      <EntityTypeMapping TypeName="DSSEntities.Layout">
         <MappingFragment StoreEntitySet="Layout">
           <ScalarProperty Name="AreasNum" ColumnName="AreasNum" />
           <ScalarProperty Name="Title" ColumnName="Title" />
@@ -82,7 +82,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Locations">
-      <EntityTypeMapping TypeName="WiSkyEntities.Location">
+      <EntityTypeMapping TypeName="DSSEntities.Location">
         <MappingFragment StoreEntitySet="Location">
           <ScalarProperty Name="Description" ColumnName="Description" />
           <ScalarProperty Name="CreateDatetime" ColumnName="CreateDatetime" />
@@ -95,7 +95,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="MediaSrcs">
-      <EntityTypeMapping TypeName="WiSkyEntities.MediaSrc">
+      <EntityTypeMapping TypeName="DSSEntities.MediaSrc">
         <MappingFragment StoreEntitySet="MediaSrc">
           <ScalarProperty Name="Description" ColumnName="Description" />
           <ScalarProperty Name="CreateDatetime" ColumnName="CreateDatetime" />
@@ -110,7 +110,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="MediaTypes">
-      <EntityTypeMapping TypeName="WiSkyEntities.MediaType">
+      <EntityTypeMapping TypeName="DSSEntities.MediaType">
         <MappingFragment StoreEntitySet="MediaType">
           <ScalarProperty Name="Description" ColumnName="Description" />
           <ScalarProperty Name="Name" ColumnName="Name" />
@@ -119,7 +119,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Playlists">
-      <EntityTypeMapping TypeName="WiSkyEntities.Playlist">
+      <EntityTypeMapping TypeName="DSSEntities.Playlist">
         <MappingFragment StoreEntitySet="Playlist">
           <ScalarProperty Name="Description" ColumnName="Description" />
           <ScalarProperty Name="Title" ColumnName="Title" />
@@ -128,7 +128,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="PlaylistItems">
-      <EntityTypeMapping TypeName="WiSkyEntities.PlaylistItem">
+      <EntityTypeMapping TypeName="DSSEntities.PlaylistItem">
         <MappingFragment StoreEntitySet="PlaylistItem">
           <ScalarProperty Name="Duration" ColumnName="Duration" />
           <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
@@ -139,7 +139,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Resolutions">
-      <EntityTypeMapping TypeName="WiSkyEntities.Resolution">
+      <EntityTypeMapping TypeName="DSSEntities.Resolution">
         <MappingFragment StoreEntitySet="Resolution">
           <ScalarProperty Name="Note" ColumnName="Note" />
           <ScalarProperty Name="Height" ColumnName="Height" />
@@ -149,7 +149,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Roles">
-      <EntityTypeMapping TypeName="WiSkyEntities.Role">
+      <EntityTypeMapping TypeName="DSSEntities.Role">
         <MappingFragment StoreEntitySet="Role">
           <ScalarProperty Name="Description" ColumnName="Description" />
           <ScalarProperty Name="RoleName" ColumnName="RoleName" />
@@ -158,7 +158,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Scenarios">
-      <EntityTypeMapping TypeName="WiSkyEntities.Scenario">
+      <EntityTypeMapping TypeName="DSSEntities.Scenario">
         <MappingFragment StoreEntitySet="Scenario">
           <ScalarProperty Name="Description" ColumnName="Description" />
           <ScalarProperty Name="Title" ColumnName="Title" />
@@ -168,7 +168,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="ScenarioItems">
-      <EntityTypeMapping TypeName="WiSkyEntities.ScenarioItem">
+      <EntityTypeMapping TypeName="DSSEntities.ScenarioItem">
         <MappingFragment StoreEntitySet="ScenarioItem">
           <ScalarProperty Name="Note" ColumnName="Note" />
           <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
@@ -180,7 +180,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Screens">
-      <EntityTypeMapping TypeName="WiSkyEntities.Screen">
+      <EntityTypeMapping TypeName="DSSEntities.Screen">
         <MappingFragment StoreEntitySet="Screen">
           <ScalarProperty Name="Description" ColumnName="Description" />
           <ScalarProperty Name="ScreenName" ColumnName="ScreenName" />

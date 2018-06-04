@@ -14,7 +14,6 @@ using SkyWeb.DatVM.Mvc;
 using Wisky.Utility;
 using System.Web.Configuration;
 using SkyWeb.DatVM.Mvc.Autofac;
-using Wisky.Data.Models.Entities.Services;
 using Wisky.Data.Utility;
 
 namespace Wisky.Controllers

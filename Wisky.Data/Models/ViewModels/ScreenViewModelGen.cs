@@ -7,12 +7,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Wisky.Data.Models.ViewModels
+namespace DSS.Data.Models.ViewModels
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class ScreenViewModel : SkyWeb.DatVM.Mvc.BaseEntityViewModel<Wisky.Data.Models.Entities.Screen>
+    public partial class ScreenViewModel : SkyWeb.DatVM.Mvc.BaseEntityViewModel<DSS.Data.Models.Entities.Screen>
     {
     	
     			public virtual int ScreenID { get; set; }
@@ -22,7 +22,7 @@ namespace Wisky.Data.Models.ViewModels
     			public virtual string Description { get; set; }
     	
     	public ScreenViewModel() : base() { }
-    	public ScreenViewModel(Wisky.Data.Models.Entities.Screen entity) : base(entity) { }
+    	public ScreenViewModel(DSS.Data.Models.Entities.Screen entity) : base(entity) { }
     
     }
 }
