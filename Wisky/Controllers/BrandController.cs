@@ -10,26 +10,14 @@ using DSS.Data.Models.Entities.Services;
 
 namespace DSS.Controllers
 {
+    [Authorize]
     public class BrandController : Controller
     {
         IBrandService brandService = DependencyUtils.Resolve<IBrandService>();
         IMapper mapper = DependencyUtils.Resolve<IMapper>();
 
-        // GET: Brand
+        //GET: Brand/Index
         public ActionResult Index()
-        {
-            var intValue = 100;
-            ViewBag.intValues = new List<int> { 1, 2, 3, 4 };
-            return View(intValue);
-        }
-
-        public JsonResult GetInt()
-        {
-            var intValues = new List<int> { 1, 2, 3, 4, 6 };
-            return Json(intValues);
-        }
-
-        public JsonResult GetBrands()
         {
             var brands = this.brandService.Get().ToList();
             var brandVMs = new List<Models.BrandDetailVM>();
@@ -40,37 +28,33 @@ namespace DSS.Controllers
                 {
                     Name = item.BrandName,
                     Description = item.Description,
+                    Id = item.BrandID,
                 };
                 brandVMs.Add(b);
             }
-            return Json(brandVMs);
-        }
-
-        public ActionResult Product(int productId)
-        {
-            return View(productId);
-        }
-
-        public JsonResult GetGroupItem(GroupItem groupItem)
-        {
-            return Json(groupItem);
-        }
-
-        // GET: Brand/Form
-        public ActionResult Form(string id)
-        {
+            ViewBag.brandList = brandVMs;
             return View();
         }
 
-        // GET: Brand/Form
-        public ActionResult Delete(int id)
+        // GET: Brand/Form/:id
+        public ActionResult Form(int? id)
         {
-            var brand = this.brandService.Get(id);
-            if (brand != null)
+            Models.BrandDetailVM model = null;
+            
+            if (id!=null)
             {
-                this.brandService.Delete(brand);
+                var brand = this.brandService.Get(id);
+                if (brand != null)
+                {
+                    model = new Models.BrandDetailVM
+                    {
+                        Name = brand.BrandName,
+                        Description = brand.Description,
+                        Id = brand.BrandID,
+                    };
+                }
             }
-            return View();
+            return View(model);
         }
 
         // POST: Brand/Add
@@ -89,5 +73,35 @@ namespace DSS.Controllers
             }
             return View("Form", model);
         }
+
+        // POST: Brand/Update
+        [HttpPost]
+        public async System.Threading.Tasks.Task<ActionResult> Update(Models.BrandDetailVM model)
+        {
+            if (ModelState.IsValid)
+            {
+                var brand = this.brandService.Get(model.Id);
+                if (brand != null)
+                {
+                    brand.BrandName = model.Name;
+                    brand.Description = model.Description;
+                }
+                await this.brandService.UpdateAsync(brand);
+                return this.RedirectToAction("Index");
+            }
+            return View("Form", model);
+        }
+
+        // GET: Brand/Delete/:id
+        public ActionResult Delete(int id)
+        {
+            var brand = this.brandService.Get(id);
+            if (brand != null)
+            {
+                this.brandService.Delete(brand);
+            }
+            return this.RedirectToAction("Index");
+        }
+
     }
 }

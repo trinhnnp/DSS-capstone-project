@@ -28,6 +28,7 @@
 
     <!-- Custom Theme Style -->
     <link href="~/Content/template-material/build/css/custom.min.css" rel="stylesheet">
+    @RenderSection("styles", false)
 </head>
 
 <body class="nav-md">
@@ -39,17 +40,6 @@
                         <a href="index.html" class="site_title"><i class="fa fa-plug"></i> <span>DSS</span></a>
                     </div>
                     <div class="clearfix"></div>
-                    <!-- menu profile quick info -->
-                    @*<div class="profile clearfix">
-                            <div class="profile_pic">
-                                <img src="~/Content/template-material/img.jpg" alt="..." class="img-circle profile_img">
-                            </div>
-                            <div class="profile_info">
-                                <span>Welcome,</span>
-                                <h2>@ViewBag.Fullname</h2>
-                            </div>
-                        </div>*@
-                    <!-- /menu profile quick info -->
                     <br />
                     <!-- sidebar menu -->
                     <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
@@ -57,7 +47,7 @@
                             <h3>@DSS.ResourcesLanguage.MenuText.GeneralSection</h3>
                             <ul class="nav side-menu">
                                 <li>
-                                    <a><i class="fa fa-users"></i> @DSS.ResourcesLanguage.MenuText.AccountMng <span class="label label-success pull-right">@DSS.ResourcesLanguage.MenuText.Coming</span></a>
+                                    <a><i class="fa fa-users"></i>@DSS.ResourcesLanguage.MenuText.AccountMng <span class="label label-success pull-right">@DSS.ResourcesLanguage.MenuText.Coming</span></a>
                                 </li>
                                 <li>
                                     <a><i class="fa fa-map-marker"></i>@DSS.ResourcesLanguage.MenuText.LocationMng <span class="label label-success pull-right">@DSS.ResourcesLanguage.MenuText.Coming</span></a>
@@ -109,8 +99,8 @@
                                 <li>
                                     <a><i class="fa fa-flag"></i> @DSS.ResourcesLanguage.MenuText.BrandMng <span class="fa fa-chevron-down"></span></a>
                                     <ul class="nav child_menu">
-                                        <li><a href="@Url.Action("Index", "Brand")">@DSS.ResourcesLanguage.MenuText.ViewList</a></li>
                                         <li><a href="@Url.Action("Form", "Brand")">@DSS.ResourcesLanguage.MenuText.AddNew</a></li>
+                                        <li><a href="@Url.Action("Index", "Brand")">@DSS.ResourcesLanguage.MenuText.ViewList</a></li>
                                     </ul>
                                 </li>
                                 <li>
